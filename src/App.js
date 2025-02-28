@@ -56,7 +56,7 @@ function App() {
 
                 <Accordion 
                     title="SCORE MUSIC"
-                    imageSrc="/images/scoreMusic.jpeg" 
+                    imageSrc="/images/score_music.jpeg" 
                     content={<ScoreMusic />} 
                     styles={accordionStyles.scoremusic}
                     isOpen={openSection === "SCORE MUSIC"} // Controls if the accordion is open
@@ -65,7 +65,7 @@ function App() {
 
                 <Accordion 
                     title="IOS APPS"
-                    imageSrc="/images/IOSapps.jpeg" 
+                    imageSrc="/images/ios_apps.jpeg" 
                     content={<IOSapps />} 
                     styles={accordionStyles.iosapps}
                     isOpen={openSection === "IOS APPS"} // Controls if the accordion is open
@@ -74,7 +74,7 @@ function App() {
 
                 <Accordion 
                     title="INSTALLATIONS"
-                    imageSrc="/images/Installations.jpeg" 
+                    imageSrc="/images/installations.jpeg" 
                     content={<Installations />} 
                     styles={accordionStyles.installations}
                     isOpen={openSection === "INSTALLATIONS"} // Controls if the accordion is open
@@ -103,7 +103,7 @@ function App() {
 
                 <Accordion 
                     title="ELECTRONIC MUSIC"
-                    imageSrc="/images/Electronic.jpeg" 
+                    imageSrc="/images/electronic.jpeg" 
                     content={<Electronic />} 
                     styles={accordionStyles.electronic}
                     isOpen={openSection === "ELECTRONIC MUSIC"} // Controls if the accordion is open
@@ -122,7 +122,7 @@ function App() {
 
                 <Accordion 
                     title="PROTOTYPES"
-                    imageSrc="/images/Prototypes.jpeg" 
+                    imageSrc="/images/prototypes.jpeg" 
                     content={<Prototypes />} 
                     styles={accordionStyles.prototypes}
                     isOpen={openSection === "PROTOTYPES"} // Controls if the accordion is open
@@ -131,7 +131,7 @@ function App() {
 
                 <Accordion 
                     title="COMMERCIAL"
-                    imageSrc="/images/Commercial.jpeg" 
+                    imageSrc="/images/commercial.jpeg" 
                     content={<Commercial />} 
                     styles={accordionStyles.commercial}
                     isOpen={openSection === "COMMERCIAL"} // Controls if the accordion is open
@@ -140,7 +140,7 @@ function App() {
 
                 <Accordion 
                     title="RELEASES"
-                    imageSrc="/images/Releases.jpeg" 
+                    imageSrc="/images/releases.jpeg" 
                     content={<Releases />} 
                     styles={accordionStyles.releases}
                     isOpen={openSection === "RELEASES"} // Controls if the accordion is open
@@ -149,7 +149,7 @@ function App() {
 
                 <Accordion 
                     title="TEXTS"
-                    imageSrc="/images/Texts.jpeg" 
+                    imageSrc="/images/texts.jpeg" 
                     content={<Texts />} 
                     styles={accordionStyles.texts}
                     isOpen={openSection === "TEXTS"} // Controls if the accordion is open
@@ -159,7 +159,7 @@ function App() {
                 {/* Pass performances styles */}
                 <Accordion 
                     title="ABOUT"
-                    imageSrc="/images/bioPic.jpeg" 
+                    imageSrc="/images/bio_pic.jpeg" 
                     content={<About />} 
                     styles={accordionStyles.about}
                     isOpen={openSection === "ABOUT"} // Controls if the accordion is open

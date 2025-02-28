@@ -15,3 +15,45 @@ Icon?
 # VS Code settings and workspace files
 .vscode/
 *.code-workspace
+
+# Node.js & npm
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build & Cache
+dist/
+build/
+.cache/
+.next/
+out/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.swn
+.nyc_output/
+coverage/
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# IDE & Editor-Specific Files
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# OS-Specific
+Thumbs.db
+Desktop.ini
