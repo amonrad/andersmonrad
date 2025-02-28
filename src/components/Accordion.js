@@ -1,7 +1,7 @@
 export default function Accordion({ title, imageSrc, content, styles, isOpen, onToggle }) {
     return (
         <div
-            id={title ? title.toLowerCase() : ""}
+            id={title ? title.toLowerCase().replace(/\s+/g, '_') : ""}
             className="px-2 sm:px-6 lg:px-4 relative mt-4"
             onClick={() => onToggle(isOpen ? null : title)} // Toggle logic
         >
