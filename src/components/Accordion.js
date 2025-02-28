@@ -1,41 +1,29 @@
 export default function Accordion({ title, imageSrc, content, styles, isOpen, onToggle }) {
     return (
-        <div id={title.toLowerCase()} className="px-2 sm:px-6 lg:px-4 relative mt-4">
+        <div
+            id={title ? title.toLowerCase() : ""}
+            className="px-2 sm:px-6 lg:px-4 relative mt-4"
+            onClick={() => onToggle(isOpen ? null : title)} // Toggle logic
+        >
             {/* Closed State */}
-            {!isOpen && (
-                <div 
-                    onClick={() => onToggle(title)}
-                    className={`${styles.closed} p-2 cursor-pointer w-full flex items-center`}
-                >
-                    <div className="z-10 flex items-center font-semibold w-full h-full">
-                        <div>
-                            <img src={imageSrc} alt={title} className="w-16 sm:w-32 h-auto rounded-lg" />
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <div className="text-black text-lg sm:text-2xl font-semibold">
-                                {title}
-                                <i className="fa fa-chevron-down ml-4"></i>
-                            </div>
+            <div className={`${styles.closed} p-2 cursor-pointer w-full flex items-center`}>
+                <div className="z-10 flex items-center font-semibold w-full h-full">
+                    <div>
+                        <img src={imageSrc} alt={title} className="w-16 sm:w-32 h-auto rounded-lg" />
+                    </div>
+                    <div className="w-full flex justify-center">
+                        <div className="text-black text-lg sm:text-2xl font-semibold">
+                            {title}
+                            <i className="fa fa-chevron-down ml-4"></i>
                         </div>
                     </div>
                 </div>
-            )}
+            </div>
 
             {/* Open State */}
             {isOpen && (
-                <div className={`${styles.open} p-2 w-full`}>
-                    <div className={`${styles.top} w-full flex items-center relative z-30 bg-transparent`}>
-                        <button onClick={() => onToggle(null)} className="w-full text-left font-semibold flex items-center relative h-full">
-                            <img src={imageSrc} alt={title} className="p-1 w-1/6 h-auto" />
-                            <span className="absolute left-1/2 transform -translate-x-[18px] sm:-translate-x-[22px] text-black text-2xl font-semibold">
-                                {title}
-                            </span>
-                        </button>
-                    </div>
-
-                    <div className={`${styles.content} overflow-hidden p-1 flex py-2 text-gray-500 z-10`}>
-                        {content}
-                    </div>
+                <div className={`${styles.content} ${styles.open} overflow-hidden p-1 flex py-2 text-gray-500 z-10`}>
+                    {content}
                 </div>
             )}
         </div>
