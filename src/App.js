@@ -48,12 +48,9 @@ function App() {
         <div className="bg-black min-h-screen">
             {/* Pass `handleMenuClick` to `TopBar` */}
             <TopBar onMenuClick={handleMenuClick} />
-            <div className="pt-24">
+            <div className="pt-16 sm:pt-24 container mx-auto">
                 
                 {/* Pass ScoreMusic styles */}
-
-
-
                 <Accordion 
                     title="SCORE MUSIC"
                     imageSrc="/images/score_music.jpeg" 

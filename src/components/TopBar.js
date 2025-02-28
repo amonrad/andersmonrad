@@ -4,16 +4,18 @@ export default function TopBar({ onMenuClick }) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="top-bar fixed top-0 left-0 w-full bg-black text-white p-4 shadow-lg z-50 flex justify-between items-center">
-            <div>
-                <h1 className="text-2xl font-semibold">Anders Monrad</h1>
-                <h2 className="text-xl font-semibold">Composer, Artist, Interaction Designer</h2>
-            </div>
+        <div className="top-bar w-full fixed top-0 left-0 bg-black text-white z-50">
+            <div className="container mx-auto p-2 sm:p-4 flex justify-between items-center">
+                <div className="flex flex-col">
+                    <h1 className="text-lg sm:text-2xl font-semibold">Anders Monrad</h1>
+                    <h2 className="text-sm sm:text-xl font-semibold">Composer, Artist, Interaction Designer</h2>
+                </div>
 
             {/* Dropdown Menu */}
             <div className="relative">
-                <button onClick={() => setMenuOpen(!menuOpen)} className="px-4 py-2 rounded hover:bg-gray-700">
-                    Menu ▼
+                <button onClick={() => setMenuOpen(!menuOpen)} className="px-2 py-1 sm:px-4 sm:py-2 rounded hover:bg-gray-700">
+                    Menu
+                    <span class="ml-1">▼</span>
                 </button>
                 {menuOpen && (
                     <div className="absolute right-0 mt-2 w-40 bg-gray-800 border border-gray-700 rounded shadow-lg">
@@ -162,6 +164,7 @@ export default function TopBar({ onMenuClick }) {
                         </a>
                     </div>
                 )}
+            </div>
             </div>
         </div>
     );

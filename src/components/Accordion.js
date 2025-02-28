@@ -1,16 +1,21 @@
 export default function Accordion({ title, imageSrc, content, styles, isOpen, onToggle }) {
     return (
-        <div id={title.toLowerCase()} className="w-full px-2 sm:px-6 lg:px-4 max-w-7xl mx-auto relative mt-4">
+        <div id={title.toLowerCase()} className="px-2 sm:px-6 lg:px-4 relative mt-4">
             {/* Closed State */}
             {!isOpen && (
                 <div 
-                    onClick={() => onToggle(title)} // ✅ Update open section
+                    onClick={() => onToggle(title)}
                     className={`${styles.closed} p-2 cursor-pointer w-full flex items-center`}
                 >
-                    <div className="z-10 flex items-center font-semibold w-full relative h-full">
-                        <img src={imageSrc} alt={title} className="p-1 w-1/6 h-auto" />
-                        <div className="absolute left-1/2 transform -translate-x-[18px] sm:-translate-x-[22px] text-black text-2xl font-semibold">
-                            {title}
+                    <div className="z-10 flex items-center font-semibold w-full h-full">
+                        <div>
+                            <img src={imageSrc} alt={title} className="size-16 sm:size-32 h-auto rounded-lg" />
+                        </div>
+                        <div class="w-full flex justify-center">
+                            <div className="text-black text-lg sm:text-2xl font-semibold">
+                                {title}
+                                <i className="fa fa-chevron-down ml-4"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
