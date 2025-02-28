@@ -14,7 +14,7 @@ export default function Accordion({ title, imageSrc, content, styles, isOpen, on
                     <div className="w-full flex justify-center">
                         <div className="text-black text-lg sm:text-2xl font-semibold">
                             {title}
-                            <i className="fa fa-chevron-down ml-4"></i>
+                            <i className={`${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'} fa ml-4`}></i>
                         </div>
                     </div>
                 </div>
