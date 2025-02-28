@@ -9,7 +9,7 @@ export default function Accordion({ title, imageSrc, content, styles, isOpen, on
                 >
                     <div className="z-10 flex items-center font-semibold w-full h-full">
                         <div>
-                            <img src={imageSrc} alt={title} className="size-16 sm:size-32 h-auto rounded-lg" />
+                            <img src={imageSrc} alt={title} className="w-16 sm:w-32 h-auto rounded-lg" />
                         </div>
                         <div class="w-full flex justify-center">
                             <div className="text-black text-lg sm:text-2xl font-semibold">

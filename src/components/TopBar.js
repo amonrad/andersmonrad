@@ -21,7 +21,7 @@ export default function TopBar({ onMenuClick }) {
                     <div className="absolute right-0 mt-2 w-40 bg-gray-800 border border-gray-700 rounded shadow-lg">
                         <a
                             href="#scoremusic"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("SCORE MUSIC");
@@ -33,7 +33,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#iosapps"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("IOS APPS");
@@ -45,7 +45,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#artinstallations"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("INSTALLATIONS");
@@ -57,7 +57,7 @@ export default function TopBar({ onMenuClick }) {
                         
                         <a
                             href="#artwork"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("VISUAL ART");
@@ -69,7 +69,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#piano"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("PIANO");
@@ -81,7 +81,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#electronic"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("ELECTRONIC MUSIC");
@@ -93,7 +93,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#performances"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("PERFORMANCES");
@@ -105,7 +105,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#prototypes"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("PROTOTYPES");
@@ -117,7 +117,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#commercial"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("COMMERCIAL");
@@ -129,7 +129,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#releases"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("RELEASES");
@@ -141,7 +141,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#texts"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("TEXTS");
@@ -153,7 +153,7 @@ export default function TopBar({ onMenuClick }) {
 
                         <a
                             href="#about"
-                            className="block px-4 py-2 text-white hover:bg-gray-700"
+                            className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
                                 onMenuClick("ABOUT");
