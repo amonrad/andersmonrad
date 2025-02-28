@@ -8,7 +8,7 @@ export default function TopBar({ onMenuClick }) {
             <div className="container mx-auto p-2 sm:p-4 flex justify-between items-center">
                 <div className="flex flex-col">
                     <h1 className="text-lg sm:text-2xl font-semibold">Anders Monrad</h1>
-                    <h2 className="text-sm sm:text-xl font-semibold">Composer, Artist, Interaction Designer</h2>
+                    <h2 className="text-sm sm:text-xl font-light">Composer, Artist, Interaction Designer</h2>
                 </div>
 
             {/* Dropdown Menu */}
