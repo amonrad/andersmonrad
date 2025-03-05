@@ -1,15 +1,15 @@
 import LinkItem from "../../../LinkItem";
 
-export default function MaerskOpera({ containerClass, textClass, iframeWrapperClass, iframeClass }) {
+export default function MaerskOpera() {
     return (
-        <div className={containerClass} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", alignItems: "center", paddingTop: "15px" }}>
+        <div className="grid grid-cols-2 gap-8 items-start" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", alignItems: "center", paddingTop: "15px" }}>
             {/* Responsive iframe wrapper */}
-            <div className={iframeWrapperClass} style={{ gridColumn: "1", gridRow: "1" }}>
+            <div className="relative w-full aspect-video" style={{ gridColumn: "1", gridRow: "1" }}>
                 <img src="/images/ScoreMusic/xlarge_superflex_gaven.jpg" className="w-full h-auto" alt="MaerskPic" />
             </div>
 
             {/* Text Section */}
-            <div className={textClass} style={{ gridColumn: "2", gridRow: "1" }}>
+            <div className="text-gray-800 text-left" style={{ gridColumn: "2", gridRow: "1" }}>
                 <h2 className="text-2xl font-bold pb-8">The Mærsk Opera (2012-16) - <LinkItem url="/files/MærskOperaen.pdf" text="(Score)" /></h2>
                 <p>
                 An opera in 3 acts, for 26 voices, choir & orchestra. Produced in collaboration with artists group  <LinkItem url="https://superflex.net" text="SUPERFLEX" /> , who wrote the libretto in collaboration with Nikolai Heltoft. First composed in 2012, where the score was exhibited as a conceptual art piece in <LinkItem url="https://nikolajkunsthal.kk.dk" text="Nikolai Kunsthal" /> 
