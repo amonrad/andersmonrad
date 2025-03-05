@@ -5,13 +5,14 @@
 
 
 export default function Releases() {
-    const aboutText = [
-        "Releases"];
+    const releasesText = "Releases";
 
     return (
         <div className="p-4 text-black bg-white bg-opacity-35 text-center">
-            <p className="mb-4">{aboutText}</p>
-
+            <div>
+            <p className="mb-4">{releasesText}</p>
+            </div>
+            
             {/* <SylvesterS 
             containerClass="grid grid-cols-2 gap-8 items-start"
             textClass="text-gray-800"

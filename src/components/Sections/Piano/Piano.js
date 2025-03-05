@@ -1,7 +1,5 @@
 export default function Piano() {
-    const pianoText = [
-        "Piano-playing is my main artistic background, and has been a central part of my artistic identity since I started playing when I was 6 years old. I played on a high level as a teenager, and participated in a few competitions. In my 20’s I abandoned the piano for a while. In later years, since I started teaching piano, I have taken up my piano playing again, and enjoy playing a wide variety of musical styles - especially the transcendental piano works of the romantic era and beyond. Here’s a little selection."
-    ];
+    const pianoText = "Piano-playing is my main artistic background, and has been a central part of my artistic identity since I started playing when I was 6 years old. I played on a high level as a teenager, and participated in a few competitions. In my 20’s I abandoned the piano for a while. In later years, since I started teaching piano, I have taken up my piano playing again, and enjoy playing a wide variety of musical styles - especially the transcendental piano works of the romantic era and beyond. Here’s a little selection.";
 
     return (
         <div className="p-4 text-black bg-white bg-opacity-35 text-center">
@@ -49,7 +47,7 @@ export default function Piano() {
                     <iframe 
                         className="absolute top-0 left-0 w-full h-full" 
                         src="https://www.youtube.com/embed/O0nAQBD13Zg?si=daaz6k9_DiTvXr0F" 
-                        title="Smetana Video" 
+                        title="Bartok Video" 
                         allowFullScreen
                     ></iframe>
                 </div>

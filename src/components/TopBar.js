@@ -15,7 +15,7 @@ export default function TopBar({ onMenuClick }) {
             <div className="relative">
                 <button onClick={() => setMenuOpen(!menuOpen)} className="px-2 py-1 sm:px-4 sm:py-2 rounded hover:bg-gray-700">
                     Menu
-                    <span class="ml-1">▼</span>
+                    <span className="ml-1">▼</span>
                 </button>
                 {menuOpen && (
                     <div className="absolute right-0 mt-2 w-40 bg-gray-800 border border-gray-700 rounded shadow-lg">

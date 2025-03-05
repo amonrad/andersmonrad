@@ -5,12 +5,12 @@
 
 
 export default function Installations() {
-    const aboutText = [
+    const aboutTextB = [
         "Installations"];
 
     return (
         <div className="p-4 text-black bg-white bg-opacity-35 text-center">
-            <p className="mb-4">{aboutText}</p>
+            <p className="mb-4">{aboutTextB}</p>
 
             {/* <SylvesterS 
             containerClass="grid grid-cols-2 gap-8 items-start"
