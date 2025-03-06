@@ -2,7 +2,7 @@ import LinkItem from "../../../LinkItem";
 
 export default function Prepositions() {
     return (
-        <div className="w-full flex flex-col items-start" style={{ paddingTop: "50px" }}>
+        <div className="w-full flex flex-col items-start" style={{ paddingTop: "75px" }}>
             
             {/* Text Section with Wrapped Image */}
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>

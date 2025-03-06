@@ -2,12 +2,12 @@ import LinkItem from "../../../LinkItem";
 
 export default function SylvesterS() {
     return (
-        <div className="w-full flex flex-col items-start" style={{ paddingTop: "50px" }}>
+        <div className="w-full flex flex-col items-start" style={{ paddingTop: "75px" }}>
             
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
 
                 {/* Headline */}
-                <h2 className="text-2xl font-bold pb-8 text-left">
+                <h2 className="text-2xl font-bold pb-8 text-center">
                     Sylvester The Symphony (2010) - <LinkItem url="/files/SylvesterTheSymphonyScore.pdf" text="(Score)" />
                 </h2>
 
