@@ -21,11 +21,6 @@ function App() {
 
     const [openSection, setOpenSection] = useState(null);
 
-    // const handleMenuClick = (sectionId) => {
-    //     setOpenSection(sectionId); // Store the open section
-    //     document.getElementById(sectionId.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
-    // };
-
     const handleMenuClick = (sectionId) => {
         setOpenSection(null); // Close all sections first
     
@@ -46,11 +41,11 @@ function App() {
 
     return (
         <div className="bg-black min-h-screen">
+            
             {/* Pass `handleMenuClick` to `TopBar` */}
             <TopBar onMenuClick={handleMenuClick} />
             <div className="pt-16 sm:pt-24 container mx-auto">
                 
-                {/* Pass ScoreMusic styles */}
                 <Accordion 
                     title="SCORE MUSIC"
                     imageSrc="/images/score_music.jpeg" 
@@ -65,8 +60,8 @@ function App() {
                     imageSrc="/images/ios_apps.jpeg" 
                     content={<IOSapps />} 
                     styles={accordionStyles.iosapps}
-                    isOpen={openSection === "IOS APPS"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "IOS APPS"}
+                    onToggle={setOpenSection}
                 />
 
                 <Accordion 
@@ -74,28 +69,26 @@ function App() {
                     imageSrc="/images/installations.jpeg" 
                     content={<Installations />} 
                     styles={accordionStyles.installations}
-                    isOpen={openSection === "INSTALLATIONS"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "INSTALLATIONS"}
+                    onToggle={setOpenSection}
                 />  
-                
-                {/* Pass artwork styles */}
+
                 <Accordion 
                     title="VISUAL ART" 
                     imageSrc="/images/Artwork/artwork.jpg" 
                     content={<Artwork />} 
                     styles={accordionStyles.artwork}
-                    isOpen={openSection === "VISUAL ART"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "VISUAL ART"}
+                    onToggle={setOpenSection}
                 />
 
-                {/* Pass performances styles */}
                 <Accordion 
                     title="PIANO"
                     imageSrc="/images/piano.jpeg" 
                     content={<Piano />} 
                     styles={accordionStyles.piano}
-                    isOpen={openSection === "PIANO"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "PIANO"}
+                    onToggle={setOpenSection}
                 />
 
                 <Accordion 
@@ -103,18 +96,17 @@ function App() {
                     imageSrc="/images/electronic.jpeg" 
                     content={<Electronic />} 
                     styles={accordionStyles.electronic}
-                    isOpen={openSection === "ELECTRONIC MUSIC"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "ELECTRONIC MUSIC"}
+                    onToggle={setOpenSection}
                 />
 
-                {/* Pass performances styles */}
                 <Accordion 
                     title="PERFORMANCES" 
                     imageSrc="/images/performances.jpeg" 
                     content={<Performances />} 
                     styles={accordionStyles.performances}
-                    isOpen={openSection === "PERFORMANCES"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "PERFORMANCES"}
+                    onToggle={setOpenSection}
                 />
 
                 <Accordion 
@@ -122,8 +114,8 @@ function App() {
                     imageSrc="/images/prototypes.jpeg" 
                     content={<Prototypes />} 
                     styles={accordionStyles.prototypes}
-                    isOpen={openSection === "PROTOTYPES"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "PROTOTYPES"}
+                    onToggle={setOpenSection}
                 />
 
                 <Accordion 
@@ -131,8 +123,8 @@ function App() {
                     imageSrc="/images/commercial.jpeg" 
                     content={<Commercial />} 
                     styles={accordionStyles.commercial}
-                    isOpen={openSection === "COMMERCIAL"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "COMMERCIAL"}
+                    onToggle={setOpenSection}
                 />
 
                 <Accordion 
@@ -140,8 +132,8 @@ function App() {
                     imageSrc="/images/releases.jpeg" 
                     content={<Releases />} 
                     styles={accordionStyles.releases}
-                    isOpen={openSection === "RELEASES"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "RELEASES"}
+                    onToggle={setOpenSection}
                 />
 
                 <Accordion 
@@ -149,18 +141,17 @@ function App() {
                     imageSrc="/images/texts.jpeg" 
                     content={<Texts />} 
                     styles={accordionStyles.texts}
-                    isOpen={openSection === "TEXTS"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "TEXTS"}
+                    onToggle={setOpenSection}
                 />
 
-                {/* Pass performances styles */}
                 <Accordion 
                     title="ABOUT"
                     imageSrc="/images/bio_pic.jpeg" 
                     content={<About />} 
                     styles={accordionStyles.about}
-                    isOpen={openSection === "ABOUT"} // Controls if the accordion is open
-                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
+                    isOpen={openSection === "ABOUT"}
+                    onToggle={setOpenSection}
                 />
             </div>
         </div>

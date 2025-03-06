@@ -26,18 +26,7 @@ export default function Accordion({ title, imageSrc, content, styles, isOpen, on
             </div>
 
 
-            {/* Open State Content (Always Rendered, But Hidden When Closed) */}
-
-            {/*             
-            <div className={`${styles.content} ${styles.open} overflow-hidden p-2 flex py-2 text-gray-500 z-10`}
-                style={{
-                    position: isOpen ? 'relative' : 'absolute',
-                    left: isOpen ? 'auto' : '-9999px',
-                    height: isOpen ? 'auto' : '0',
-                    overflow: 'hidden',
-                    opacity: isOpen ? 1 : 0,
-                    transition: 'opacity 0.3s ease-in-out, height 0.3s ease-in-out'
-                }} >*/}
+            {/* Open State Content (Always Rendered, But Hidden When Closed - for search engine optimization) */}
 
             <div 
                 className={`${styles.content} ${styles.open} overflow-hidden p-2 flex py-2 text-gray-500 z-10 

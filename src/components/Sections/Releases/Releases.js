@@ -12,13 +12,6 @@ export default function Releases() {
             <div>
             <p className="mb-4">{releasesText}</p>
             </div>
-            
-            {/* <SylvesterS 
-            containerClass="grid grid-cols-2 gap-8 items-start"
-            textClass="text-gray-800"
-            iframeWrapperClass="relative w-full aspect-video"
-            iframeClass="absolute top-0 left-0 w-full h-full"
-            />       */}
         </div>
     );
 }

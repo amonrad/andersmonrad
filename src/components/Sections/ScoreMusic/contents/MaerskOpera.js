@@ -2,7 +2,7 @@ import LinkItem from "../../../LinkItem";
 
 export default function MaerskOpera() {
     return (
-        <div className="w-full flex flex-col items-start" style={{ paddingTop: "75px" }}>
+        <div className="w-full flex flex-col items-start" style={{ paddingTop: "30px" }}>
             
             {/* Text Section with Wrapped Image */}
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
