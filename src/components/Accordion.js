@@ -40,7 +40,7 @@ export default function Accordion({ title, imageSrc, content, styles, isOpen, on
                 }} >*/}
 
             <div 
-                className={`${styles.content} ${styles.open} overflow-hidden p-1 flex py-2 text-gray-500 z-10 
+                className={`${styles.content} ${styles.open} overflow-hidden p-2 flex py-2 text-gray-500 z-10 
                 transition-opacity duration-300 ease-in-out ${isOpen ? 'relative opacity-100 h-auto' : 'absolute opacity-0 h-0 -left-[9999px]'}`}
             >
             {content}
