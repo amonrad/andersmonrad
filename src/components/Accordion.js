@@ -1,7 +1,7 @@
-export default function Accordion({ title, imageSrc, content, styles, isOpen, onToggle }) {
+export default function Accordion({ title, displayName, imageSrc, content, styles, isOpen, onToggle }) {
     return (
         <div 
-            id={title ? title.toLowerCase().replace(/\s+/g, '_') : ""} 
+            id={title} //{title ? title.toLowerCase().replace(/\s+/g, '_') : ""} 
             className="px-2 sm:px-6 lg:px-4 relative mt-4"
         >
             {/* Clickable Top Bar */}
@@ -18,7 +18,7 @@ export default function Accordion({ title, imageSrc, content, styles, isOpen, on
                     </div>
                     <div className="w-full flex justify-center">
                         <div className="text-black text-lg sm:text-2xl font-semibold">
-                            {title}
+                            {displayName}
                             <i className={`${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'} fa ml-4`}></i>
                         </div>
                     </div>

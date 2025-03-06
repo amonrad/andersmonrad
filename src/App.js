@@ -25,19 +25,49 @@ function App() {
         setOpenSection(null); // Close all sections first
     
         setTimeout(() => {
-            setOpenSection(sectionId); // Open the selected section after a short delay
-        }, 100); // Short delay ensures state updates first
+            const scrollToSection = () => {
+                const element = document.getElementById(sectionId.toLowerCase());
+                if (element) {
+                    const topBarHeight = document.querySelector('.top-bar')?.offsetHeight || 100;
+                    const y = element.getBoundingClientRect().top + window.scrollY - topBarHeight;
     
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                }
+            };
+    
+            // Ensure scrolling happens after the DOM has fully updated
+            requestAnimationFrame(() => {
+                requestAnimationFrame(scrollToSection);
+            });
+        }, 100); 
         setTimeout(() => {
-            const element = document.getElementById(sectionId.toLowerCase());
-            if (element) {
-                const yOffset = -100; // Adjust this value to match the height of the TopBar
-                const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-    
-                window.scrollTo({ top: y, behavior: "smooth" });
-            }
-        }, 200); // Scroll after the accordion is fully updated
+            setOpenSection(sectionId); // Open the selected section after a short delay
+        }, 500); 
     };
+
+    // const handleMenuClick = (sectionId) => {
+    //     setTimeout(() => {
+    //     setOpenSection(null); // Close all sections first
+    //     }, 100); // Scroll after the accordion is fully updated
+    
+    //     setTimeout(() => {
+    //         const element = document.getElementById(sectionId.toLowerCase());
+    //         if (element) {
+    //             const topBarHeight = document.querySelector('.top-bar')?.offsetHeight || 100;
+    //             const yOffset = -topBarHeight;
+
+    //             //const yOffset = -100; // Adjust this value to match the height of the TopBar
+    //             const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+    
+    //             window.scrollTo({ top: y, behavior: "smooth" });
+    //         }
+    //     }, 1000); // Scroll after the accordion is fully updated
+
+    //     setTimeout(() => {
+    //         setOpenSection(sectionId); // Open the selected section after a short delay
+    //     }, 500); // Short delay ensures state updates first
+        
+    // };
 
     return (
         <div className="bg-black min-h-screen">
@@ -47,25 +77,28 @@ function App() {
             <div className="pt-16 sm:pt-24 container mx-auto">
                 
                 <Accordion 
-                    title="SCORE MUSIC"
+                    title="scoremusic"
+                    displayName="SCORE MUSIC"
                     imageSrc="/images/score_music.jpeg" 
                     content={<ScoreMusic />} 
                     styles={accordionStyles.scoremusic}
-                    isOpen={openSection === "SCORE MUSIC"} // Controls if the accordion is open
+                    isOpen={openSection === "SCOREMUSIC"} // Controls if the accordion is open
                     onToggle={setOpenSection} // Allows the accordion to update `openSection`
                 />
 
                 <Accordion 
-                    title="IOS APPS"
+                    title="iosapps"
+                    displayName="IOS APPS"
                     imageSrc="/images/ios_apps.jpeg" 
                     content={<IOSapps />} 
                     styles={accordionStyles.iosapps}
-                    isOpen={openSection === "IOS APPS"}
+                    isOpen={openSection === "IOSAPPS"}
                     onToggle={setOpenSection}
                 />
 
                 <Accordion 
-                    title="INSTALLATIONS"
+                    title="installations"
+                    displayName="INSTALLATIONS"
                     imageSrc="/images/installations.jpeg" 
                     content={<Installations />} 
                     styles={accordionStyles.installations}
@@ -74,16 +107,18 @@ function App() {
                 />  
 
                 <Accordion 
-                    title="VISUAL ART" 
+                    title="visualart" 
+                    displayName="VISUAL ART"
                     imageSrc="/images/Artwork/artwork.jpg" 
                     content={<Artwork />} 
                     styles={accordionStyles.artwork}
-                    isOpen={openSection === "VISUAL ART"}
+                    isOpen={openSection === "VISUALART"}
                     onToggle={setOpenSection}
                 />
 
                 <Accordion 
-                    title="PIANO"
+                    title="piano"
+                    displayName="PIANO"
                     imageSrc="/images/piano.jpeg" 
                     content={<Piano />} 
                     styles={accordionStyles.piano}
@@ -92,16 +127,18 @@ function App() {
                 />
 
                 <Accordion 
-                    title="ELECTRONIC MUSIC"
+                    title="electronicmusic"
+                    displayName="ELECTRONIC MUSIC"
                     imageSrc="/images/electronic.jpeg" 
                     content={<Electronic />} 
                     styles={accordionStyles.electronic}
-                    isOpen={openSection === "ELECTRONIC MUSIC"}
+                    isOpen={openSection === "ELECTRONICMUSIC"}
                     onToggle={setOpenSection}
                 />
 
                 <Accordion 
-                    title="PERFORMANCES" 
+                    title="performances" 
+                    displayName="PERFORMANCES"
                     imageSrc="/images/performances.jpeg" 
                     content={<Performances />} 
                     styles={accordionStyles.performances}
@@ -110,7 +147,8 @@ function App() {
                 />
 
                 <Accordion 
-                    title="PROTOTYPES"
+                    title="prototypes"
+                    displayName="PROTOTYPES"
                     imageSrc="/images/prototypes.jpeg" 
                     content={<Prototypes />} 
                     styles={accordionStyles.prototypes}
@@ -119,7 +157,8 @@ function App() {
                 />
 
                 <Accordion 
-                    title="COMMERCIAL"
+                    title="commercial"
+                    displayName="COMMERCIAL"
                     imageSrc="/images/commercial.jpeg" 
                     content={<Commercial />} 
                     styles={accordionStyles.commercial}
@@ -128,7 +167,8 @@ function App() {
                 />
 
                 <Accordion 
-                    title="RELEASES"
+                    title="releases"
+                    displayName="RELEASES"
                     imageSrc="/images/releases.jpeg" 
                     content={<Releases />} 
                     styles={accordionStyles.releases}
@@ -137,7 +177,8 @@ function App() {
                 />
 
                 <Accordion 
-                    title="TEXTS"
+                    title="texts"
+                    displayName="TEXTS"
                     imageSrc="/images/texts.jpeg" 
                     content={<Texts />} 
                     styles={accordionStyles.texts}
@@ -146,13 +187,19 @@ function App() {
                 />
 
                 <Accordion 
-                    title="ABOUT"
+                    title="about"
+                    displayName="ABOUT"
                     imageSrc="/images/bio_pic.jpeg" 
                     content={<About />} 
                     styles={accordionStyles.about}
                     isOpen={openSection === "ABOUT"}
                     onToggle={setOpenSection}
                 />
+                
+                <div className="w-full h-screen opacity-0 pointer-events-none">
+                {/* This fills the screen but is invisible */}
+                </div>
+                
             </div>
         </div>
     );

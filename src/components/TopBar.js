@@ -24,7 +24,7 @@ export default function TopBar({ onMenuClick }) {
                             className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
-                                onMenuClick("SCORE MUSIC");
+                                onMenuClick("SCOREMUSIC");
                                 setMenuOpen(false);
                             }}
                         >
@@ -36,7 +36,7 @@ export default function TopBar({ onMenuClick }) {
                             className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
-                                onMenuClick("IOS APPS");
+                                onMenuClick("IOSAPPS");
                                 setMenuOpen(false);
                             }}
                         >
@@ -60,7 +60,7 @@ export default function TopBar({ onMenuClick }) {
                             className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
-                                onMenuClick("VISUAL ART");
+                                onMenuClick("VISUALART");
                                 setMenuOpen(false);
                             }}
                         >
@@ -84,7 +84,7 @@ export default function TopBar({ onMenuClick }) {
                             className="text-sm sm:text-lg block px-4 py-2 text-white hover:bg-gray-700"
                             onClick={(e) => {
                                 e.preventDefault();
-                                onMenuClick("ELECTRONIC MUSIC");
+                                onMenuClick("ELECTRONICMUSIC");
                                 setMenuOpen(false);
                             }}
                         >
