@@ -1,15 +1,32 @@
 export default function Accordion({ title, displayName, imageSrc, content, styles, isOpen, onToggle }) {
     return (
         <div 
-            id={title} //{title ? title.toLowerCase().replace(/\s+/g, '_') : ""} 
+            id={title}
             className="px-2 sm:px-6 lg:px-4 relative mt-4"
         >
             {/* Clickable Top Bar */}
             <div 
                 className={`${isOpen ? styles.open : styles.closed} p-2 cursor-pointer w-full flex items-center`}
+                
                 onClick={(e) => {
-                    e.stopPropagation(); // Prevents click from bubbling to parent
-                    onToggle(isOpen ? null : title);
+                    e.stopPropagation(); // Prevents click from bubbling up to parent elements
+                
+                    // Determine whether the accordion is about to open (before updating state)
+                    const willOpen = !isOpen; // isOpen reflects *current* state, so we invert it
+                
+                    onToggle(willOpen ? title : null); // Update state: open if closed, close if open
+                
+                    if (willOpen) { // Only scroll when the accordion is opening, not closing
+                        setTimeout(() => {
+                            const element = document.getElementById(title); // Get the accordion's container
+                            if (element) {
+                                const topBarHeight = document.querySelector('.top-bar')?.offsetHeight || 100; // Dynamically get TopBar height
+                                const y = element.getBoundingClientRect().top + window.scrollY - topBarHeight;
+                
+                                window.scrollTo({ top: y, behavior: "smooth" }); // Scroll smoothly to the accordion
+                            }
+                        }, 200); // Small delay to ensure accordion state updates before scrolling
+                    }
                 }}
             >
                 <div className="z-10 flex items-center font-semibold w-full h-full">

@@ -49,7 +49,7 @@ const accordionStyles = {
     },
     prototypes: {
         closed: "bg-rose-600 hover:bg-rose-500",
-        open: "bg-yellow-500",
+        open: "bg-rose-500",
         top: "bg-transparent",
         content: "text-gray-500"
     },

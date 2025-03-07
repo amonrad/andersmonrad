@@ -1,11 +1,5 @@
 import LinkItem from "../../../LinkItem";
 
-
-// containerClass="grid grid-cols-2 gap-8 items-start"
-//                 textClass="text-gray-800"
-//                 iframeWrapperClass="relative w-full aspect-video"
-//                 iframeClass="absolute top-0 left-0 w-full h-full"
-
 export default function LegoConcert() {
     return (
         <div className="grid grid-cols-2 gap-8 items-start" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", alignItems: "center", paddingTop: "40px" }}>

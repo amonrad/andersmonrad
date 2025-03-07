@@ -1,15 +1,9 @@
 import LinkItem from "../../../LinkItem";
 
-// containerClass="grid grid-cols-2 gap-8 items-start"
-//                 textClass="text-gray-800"
-//                 iframeWrapperClass="relative w-full aspect-video"
-//                 iframeClass="absolute top-0 left-0 w-full h-full"
-
 export default function GreenRusty() {
     return (
         <div className="grid grid-cols-2 gap-8 items-start" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", alignItems: "center", paddingTop: "40px" }}>
-        {/*<div className={containerClass}>*/}
-            {/*<div className={textClass}>*/}
+            {/* Text Section */}
             <div className="text-gray-800" style={{ gridColumn: "1", gridRow: "1" }}>
                 <h2 className="text-2xl font-bold pb-8">'Green, Rusty Metal On A Sunken Ship'</h2>
                 <p>
@@ -19,7 +13,6 @@ export default function GreenRusty() {
 
             {/* Responsive iframe wrapper */}
             <div className="relative w-full aspect-video" style={{ gridColumn: "2", gridRow: "1" }}>
-            {/*<div className={`${iframeWrapperClass} relative`} style={{ paddingTop: "56.25%" }}>*/}
                 <iframe 
                     className="absolute top-0 left-0 w-full h-full" 
                     src="https://player.vimeo.com/video/27066966" 
