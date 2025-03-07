@@ -1,8 +1,8 @@
 //import LinkItem from "../../../LinkItem";
 
-export default function MaerskVinyl() {
+export default function Dowar() {
     const aboutText = 
-        "MaerskVinyl";
+        "Dowar";
 
     return (
         <div className="p-4 text-black bg-white bg-opacity-35 text-center">

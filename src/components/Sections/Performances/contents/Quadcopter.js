@@ -1,10 +1,15 @@
 import LinkItem from "../../../LinkItem";
 
-export default function Quadcopter({ containerClass, textClass, iframeWrapperClass, iframeClass }) {
+// containerClass="grid grid-cols-2 gap-8 items-start"
+//                 textClass="text-gray-800"
+//                 iframeWrapperClass="relative w-full aspect-video"
+//                 iframeClass="absolute top-0 left-0 w-full h-full"
+
+export default function Quadcopter() {
     return (
-        <div className={containerClass} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", alignItems: "center", paddingTop: "40px" }}>
+        <div className="grid grid-cols-2 gap-8 items-start" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", alignItems: "center", paddingTop: "40px" }}>
             {/* Text Section */}
-            <div className={textClass} style={{ gridColumn: "1", gridRow: "1" }}>
+            <div className="text-gray-800" style={{ gridColumn: "1", gridRow: "1" }}>
                 <h2 className="text-2xl font-bold pb-8">The Quadcopter Concert</h2>
                 <p>
                     Performance from <LinkItem url="https://tedxcopenhagen.dk/events/mobility/" text="TEDxCopenhagen" /> event, 
@@ -17,9 +22,9 @@ export default function Quadcopter({ containerClass, textClass, iframeWrapperCla
             </div>
 
             {/* Responsive iframe wrapper */}
-            <div className={iframeWrapperClass} style={{ gridColumn: "2", gridRow: "1" }}>
+            <div className="relative w-full aspect-video" style={{ gridColumn: "2", gridRow: "1" }}>
                 <iframe 
-                    className={`${iframeClass} absolute top-0 left-0 w-full h-full`} 
+                    className="absolute top-0 left-0 w-full h-full"
                     src="https://www.youtube.com/embed/g9_yaSGtlQI?si=a-CX0Z1aogXiW0pj" 
                     title="Quadcopter Video" 
                     allowFullScreen

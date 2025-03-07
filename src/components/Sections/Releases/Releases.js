@@ -6,8 +6,6 @@ import EMPsamlet from "./contents/EMPsamlet";
 
 
 export default function Releases() {
-    const releasesText = "Releases";
-
     return (
         <div className="p-4 text-black bg-white bg-opacity-35 text-center">
             <MaerskVinyl/>

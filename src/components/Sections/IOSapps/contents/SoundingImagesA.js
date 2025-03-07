@@ -1,8 +1,8 @@
 //import LinkItem from "../../../LinkItem";
 
-export default function MaerskVinyl() {
+export default function SoundingImagesA() {
     const aboutText = 
-        "MaerskVinyl";
+        "SoundingImages 1-6";
 
     return (
         <div className="p-4 text-black bg-white bg-opacity-35 text-center">
