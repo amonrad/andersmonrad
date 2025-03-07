@@ -1,7 +1,8 @@
-// import MaerskOpera from "./contents/MaerskOpera";
-// import Prepositions from "./contents/Prepositions";
-// import DeejayM from "./contents/DeejayM";
-// import SylvesterS from "./contents/SylvesterS";
+import MaerskVinyl from "./contents/MaerskVinyl";
+import ApopheniaVinyl from "./contents/ApopheniaVinyl";
+import AdvancedVinyl from "./contents/AdvancedVinyl";
+import TemsonVinyl from "./contents/TemsonVinyl";
+import EMPsamlet from "./contents/EMPsamlet";
 
 
 export default function Releases() {
@@ -9,9 +10,11 @@ export default function Releases() {
 
     return (
         <div className="p-4 text-black bg-white bg-opacity-35 text-center">
-            <div>
-            <p className="mb-4">{releasesText}</p>
-            </div>
+            <MaerskVinyl/>
+            <ApopheniaVinyl/>
+            <AdvancedVinyl/>
+            <TemsonVinyl/>
+            <EMPsamlet/>   
         </div>
     );
 }

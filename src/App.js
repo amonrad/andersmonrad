@@ -14,7 +14,6 @@ import Prototypes from "./components/Sections/Prototypes/Prototypes";
 import Releases from "./components/Sections/Releases/Releases";
 import Texts from "./components/Sections/Texts/Texts";
 
-
 import accordionStyles from "./styles/styles";
 
 function App() {
@@ -45,30 +44,6 @@ function App() {
         }, 500); 
     };
 
-    // const handleMenuClick = (sectionId) => {
-    //     setTimeout(() => {
-    //     setOpenSection(null); // Close all sections first
-    //     }, 100); // Scroll after the accordion is fully updated
-    
-    //     setTimeout(() => {
-    //         const element = document.getElementById(sectionId.toLowerCase());
-    //         if (element) {
-    //             const topBarHeight = document.querySelector('.top-bar')?.offsetHeight || 100;
-    //             const yOffset = -topBarHeight;
-
-    //             //const yOffset = -100; // Adjust this value to match the height of the TopBar
-    //             const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-    
-    //             window.scrollTo({ top: y, behavior: "smooth" });
-    //         }
-    //     }, 1000); // Scroll after the accordion is fully updated
-
-    //     setTimeout(() => {
-    //         setOpenSection(sectionId); // Open the selected section after a short delay
-    //     }, 500); // Short delay ensures state updates first
-        
-    // };
-
     return (
         <div className="bg-black min-h-screen">
             
@@ -82,7 +57,7 @@ function App() {
                     imageSrc="/images/score_music.jpeg" 
                     content={<ScoreMusic />} 
                     styles={accordionStyles.scoremusic}
-                    isOpen={openSection === "SCOREMUSIC"} // Controls if the accordion is open
+                    isOpen={openSection === "scoremusic"} // Controls if the accordion is open
                     onToggle={setOpenSection} // Allows the accordion to update `openSection`
                 />
 
@@ -92,7 +67,7 @@ function App() {
                     imageSrc="/images/ios_apps.jpeg" 
                     content={<IOSapps />} 
                     styles={accordionStyles.iosapps}
-                    isOpen={openSection === "IOSAPPS"}
+                    isOpen={openSection === "iosapps"}
                     onToggle={setOpenSection}
                 />
 
@@ -102,7 +77,7 @@ function App() {
                     imageSrc="/images/installations.jpeg" 
                     content={<Installations />} 
                     styles={accordionStyles.installations}
-                    isOpen={openSection === "INSTALLATIONS"}
+                    isOpen={openSection === "installations"}
                     onToggle={setOpenSection}
                 />  
 
@@ -112,7 +87,7 @@ function App() {
                     imageSrc="/images/Artwork/artwork.jpg" 
                     content={<Artwork />} 
                     styles={accordionStyles.artwork}
-                    isOpen={openSection === "VISUALART"}
+                    isOpen={openSection === "visualart"}
                     onToggle={setOpenSection}
                 />
 
@@ -122,7 +97,7 @@ function App() {
                     imageSrc="/images/piano.jpeg" 
                     content={<Piano />} 
                     styles={accordionStyles.piano}
-                    isOpen={openSection === "PIANO"}
+                    isOpen={openSection === "piano"}
                     onToggle={setOpenSection}
                 />
 
@@ -132,7 +107,7 @@ function App() {
                     imageSrc="/images/electronic.jpeg" 
                     content={<Electronic />} 
                     styles={accordionStyles.electronic}
-                    isOpen={openSection === "ELECTRONICMUSIC"}
+                    isOpen={openSection === "electronicmusic"}
                     onToggle={setOpenSection}
                 />
 
@@ -142,7 +117,7 @@ function App() {
                     imageSrc="/images/performances.jpeg" 
                     content={<Performances />} 
                     styles={accordionStyles.performances}
-                    isOpen={openSection === "PERFORMANCES"}
+                    isOpen={openSection === "performances"}
                     onToggle={setOpenSection}
                 />
 
@@ -152,7 +127,7 @@ function App() {
                     imageSrc="/images/prototypes.jpeg" 
                     content={<Prototypes />} 
                     styles={accordionStyles.prototypes}
-                    isOpen={openSection === "PROTOTYPES"}
+                    isOpen={openSection === "prototypes"}
                     onToggle={setOpenSection}
                 />
 
@@ -162,7 +137,7 @@ function App() {
                     imageSrc="/images/commercial.jpeg" 
                     content={<Commercial />} 
                     styles={accordionStyles.commercial}
-                    isOpen={openSection === "COMMERCIAL"}
+                    isOpen={openSection === "commercial"}
                     onToggle={setOpenSection}
                 />
 
@@ -172,7 +147,7 @@ function App() {
                     imageSrc="/images/releases.jpeg" 
                     content={<Releases />} 
                     styles={accordionStyles.releases}
-                    isOpen={openSection === "RELEASES"}
+                    isOpen={openSection === "releases"}
                     onToggle={setOpenSection}
                 />
 
@@ -182,7 +157,7 @@ function App() {
                     imageSrc="/images/texts.jpeg" 
                     content={<Texts />} 
                     styles={accordionStyles.texts}
-                    isOpen={openSection === "TEXTS"}
+                    isOpen={openSection === "texts"}
                     onToggle={setOpenSection}
                 />
 
@@ -192,12 +167,12 @@ function App() {
                     imageSrc="/images/bio_pic.jpeg" 
                     content={<About />} 
                     styles={accordionStyles.about}
-                    isOpen={openSection === "ABOUT"}
+                    isOpen={openSection === "about"}
                     onToggle={setOpenSection}
                 />
                 
                 <div className="w-full h-screen opacity-0 pointer-events-none">
-                {/* This fills the screen but is invisible */}
+                {/* This fills the screen but is invisible - otherwise scrolling to bottom sections doesn't work properly */}
                 </div>
                 
             </div>
