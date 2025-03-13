@@ -1,12 +1,37 @@
-//import LinkItem from "../../../LinkItem";
+import LinkItem from "../../../LinkItem";
 
 export default function SoundingImagesB() {
-    const aboutText = 
-        "SoundingImages 7-12";
-
     return (
-        <div className="p-4 text-black bg-white bg-opacity-35 text-center">
-            <p className="mb-4">{aboutText}</p>
+        <div className="pt-8 p-2 bg-white bg-opacity-35 w-full flex flex-col items-start">
+            
+        {/* Text Section with Wrapped Video */}
+        <div className="text-gray-800 text-left" style={{ position: "relative" }}>
+                {/* Wrapped Text */}
+                <h2 className="text-2xl font-bold pb-8 text-center">
+                Sounding Images #7-12 (2018)
+                </h2>
+
+                {/* Floating Video */}
+                <div className="w-2/3 float-left mr-4 mb-2">
+                    <div className="relative w-full aspect-video">
+                        <iframe 
+                            className="absolute inset-0 w-full h-full" 
+                            src="https://player.vimeo.com/video/203266880" 
+                            title="SoundingImagesA Video" 
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            
+                <p>
+                “Sounding Images #7-12” is an audiovisual IOS app, which I developed in 2017-18 as a follow up to its predecessor “Sounding Images #1-6” from 2016. <br key="break" />
+                Whereas “Sounding Images #1-6” was based on concrete sound recordings, “Sounding Images #7-12” is based entirely on sound synthesis, with no prerecorded sounds whatsoever. <br key="break" />
+                The App was first presented at a concert at the experimental music festival <LinkItem url="https://www.snyk.dk/en/about-gong-tomorrow" text="'Gong Tomorrow'" /> November 10th 2018 at the Copenhagen venue <LinkItem url="https://alicecph.com/" text="ALICE" />, with my longtime collaborator <LinkItem url="http://www.yinghsuehchen.com/" text="Ying-Hsueh Chen" />. <br key="break" />
+                Here, the app was showcased as part of a spectacular musical duo-performance, where I performed with the app in a musical dialogue with Ying-Hsueh Chen, performing on her acoustic percussion instruments. <br key="break" />    
+                Unfortunately “Sounding Images #7-12″ is not currently available for download on appstore.
+                          
+                </p>  
+            </div>
         </div>
     );
 }

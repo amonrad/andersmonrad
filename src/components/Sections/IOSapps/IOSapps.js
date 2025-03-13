@@ -5,10 +5,10 @@ import VirtuosoApp from "./contents/VirtuosoApp";
 
 export default function IOSapps() {
     return (
-        <div className="p-4 text-black bg-white bg-opacity-35 text-center">
+        <div className="text-black text-center space-y-4">
             <VisualStudies/>
-            <SoundingImagesB/>
             <SoundingImagesA/>
+            <SoundingImagesB/>
             <VirtuosoApp/>
         </div>
     );

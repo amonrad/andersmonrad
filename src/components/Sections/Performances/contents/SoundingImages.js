@@ -2,24 +2,28 @@ import LinkItem from "../../../LinkItem";
 
 export default function SoundingImages() {
     return (
-        <div className="grid grid-cols-2 gap-8 items-start" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", alignItems: "center", paddingTop: "40px" }}>
-            {/* Text Section */}
-            <div className="text-gray-800" style={{ gridColumn: "1", gridRow: "1" }}>
-                <h2 className="text-2xl font-bold pb-8">Sounding Images & Percussion</h2>
+        <div className="pt-8 p-2 bg-white bg-opacity-35 w-full flex flex-col items-start">
+            
+            <div className="text-gray-800 text-left" style={{ position: "relative" }}>
+                   
+                <h2 className="text-2xl font-bold pb-8 text-center">Sounding Images & Percussion</h2>
+                
+                {/* Responsive iframe wrapper */}
+                <div className="w-2/3 float-left mr-4 mb-2">
+                    <div className="relative w-full aspect-video">
+                        <iframe className="absolute inset-0 w-full h-full" 
+                            src="https://www.youtube.com/embed/Ehx0cWi_bbY?si=x9CmG4wnzqygTSOH" 
+                            title="SoundingImages Video" 
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+
                 <p>
                     Performance from <LinkItem url="https://genbib.dk/tranen" text="Tranen, Gentofte Hovedbibliotek" />, March 31, 2019. I am performing on an iPad, showcasing my iOS app Sounding Images #7-12 in an improvisatory interplay with Ying-Hsueh Chen on her acoustic percussion instruments. We perform regularly with this setup at various venues.
                 </p>
             </div>
-
-            {/* Responsive iframe wrapper */}
-            <div className="relative w-full aspect-video" style={{ gridColumn: "2", gridRow: "1" }}>
-                <iframe 
-                    className="absolute top-0 left-0 w-full h-full" 
-                    src="https://www.youtube.com/embed/Ehx0cWi_bbY?si=x9CmG4wnzqygTSOH" 
-                    title="SoundingImages Video" 
-                    allowFullScreen
-                ></iframe>
-            </div>
+ 
         </div>
     );
 }

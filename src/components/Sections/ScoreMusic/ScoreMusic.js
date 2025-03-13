@@ -6,9 +6,10 @@ import SylvesterS from "./contents/SylvesterS";
 
 export default function ScoreMusic() {
     return (
-        <div className="p-4 text-black bg-white bg-opacity-35 text-center">
+
+        <div className="text-black text-center space-y-4"> 
             <MaerskOpera/>
-            <Prepositions/>
+            <Prepositions/>        
             <DeejayM/>
             <SylvesterS/>      
         </div>

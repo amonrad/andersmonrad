@@ -2,13 +2,13 @@ import LinkItem from "../../../LinkItem";
 
 export default function Heksepige() {
     return (
-        <div className="w-full flex flex-col items-start" style={{ paddingTop: "50px" }}>
+        <div className="p-2 pt-8 pb-4 bg-white bg-opacity-35 w-full flex flex-col items-start">
             
             {/* Text Section with Wrapped Image */}
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
                 
                 {/* Wrapped Text */}
-                <h2 className="text-2xl font-bold pb-8 text-left">
+                <h2 className="text-2xl font-bold pb-8 text-center">
                     Heksepige (2005) -  <LinkItem url="/files/Heksepige.pdf" text="(Score)" />
                 </h2>
 

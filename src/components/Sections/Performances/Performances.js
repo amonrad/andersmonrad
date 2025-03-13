@@ -7,7 +7,7 @@ import LegoConcert from "./contents/LegoConcert";
 
 export default function Performances() {
     return (
-        <div className="p-4 text-black bg-white bg-opacity-35">
+        <div className="text-black text-center space-y-4">
             <SoundingImages/>
             <Quadcopter/>
             <Virtuoso/>
