@@ -24,7 +24,7 @@ export default function VisualStudies() {
                 <p>
                 “Visual Studies” was originally developed as a macOS-application, intended for audiovisual live performances by a music ensemble. For this purpose, I even constructed a traditional sheet music score, with instructions for how musicians should play the virtual instruments, via MIDI drum pads. Thereby the project combines my background as a classically trained composer, with my more recently acquired skills as a digital, audiovisual software developer. This project also marks the first time I have experimented with coding graphic shaders.<br key="break" />
                 However, public performances of the project yet have to find fruition. As soon as this happens, I will publish performance dates and video-recordings on this site. Take a look at the embedded video (with a screendump of a midi-playthrough of the musical score) to get an impression of the work's graphic and sonic universe.<br key="break" />
-                It is possible, that I will develop an IOS-application from this project in the future. Until then, you can try the macOS-application for yourself <LinkItem url="https://genbib.dk/tranen" text="here" />.
+                It is possible, that I will develop an IOS-application from this project in the future. Until then, you can try the macOS-application for yourself <LinkItem url="/files/Visual Studies Updated.zip" text="here" />.
                 </p>
 
                 
