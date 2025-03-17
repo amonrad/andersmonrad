@@ -19,7 +19,7 @@ export default function DeejayM() {
                 {/* Embedded Audio */}
                 <iframe 
                     className="w-full h-14 mt-2"
-                    src="https://www.youtube.com/embed/57yMZ3GMZD8?si=HjEbYqaYW5S6eBNV&controls=1&showinfo=0&autoplay=0&mute=0"
+                    src="https://www.youtube.com/embed/nX0rHltJEHs?si=jqe861JSQ0dFZvP3&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="Deejay Audio"
                     allow="encrypted media"
                 ></iframe>

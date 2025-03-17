@@ -27,19 +27,19 @@ export default function Heksepige() {
                 {/* Embedded Audio */}
                 <iframe 
                     className="w-full h-14 mt-2"
-                    src="https://www.youtube.com/embed/57yMZ3GMZD8?si=HjEbYqaYW5S6eBNV&controls=1&showinfo=0&autoplay=0&mute=0"
+                    src="https://www.youtube.com/embed/q8imDU78z2s?si=SxfPobhv6EeComqj&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="HeksepigeA Audio"
                     allow="encrypted media"
                 ></iframe>
                 <iframe 
                     className="w-full h-14 mt-2"
-                    src="https://www.youtube.com/embed/4GJccpuV6nY?si=pxh84rxBi9-ymQD6&controls=1&showinfo=0&autoplay=0&mute=0"
+                    src="https://www.youtube.com/embed/nd7cNFMjbX0?si=bvxcksEBIAILs4eO&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="HeksepigeB Audio"
                     allow="encrypted media"
                 ></iframe>
                 <iframe 
                     className="w-full h-14 mt-2"
-                    src="https://www.youtube.com/embed/4GJccpuV6nY?si=pxh84rxBi9-ymQD6&controls=1&showinfo=0&autoplay=0&mute=0"
+                    src="https://www.youtube.com/embed/73o9Msf7tco?si=h4ywp2cMWwNsyuI_&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="HeksepigeC Audio"
                     allow="encrypted media"
                 ></iframe>
