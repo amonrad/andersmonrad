@@ -13,7 +13,7 @@ export default function GreenRustyB() {
             
                 <iframe 
                     className="w-full h-14 mt-5"  // Full width with minimal height
-                    src="https://www.youtube.com/embed/T69PNZAC-WY?si=zc1NFGXTN5STpVDe&controls=1&showinfo=0&autoplay=0&mute=0"
+                    src="https://www.youtube.com/embed/jaPt1PmGJWA?si=cqeZ5nFFhXOTREWN?si=zc1NFGXTN5STpVDe&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="GreenRusty Audio"
                     allow="encrypted media"
                 ></iframe>
