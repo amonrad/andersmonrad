@@ -4,9 +4,9 @@ import MrDoodles from "./contents/MrDoodles";
 
 export default function Prototypes() {
     return (
-        <div className="p-4 text-black bg-white bg-opacity-35 text-center">
-            <EggRunGame/>
+        <div className="text-black text-center space-y-4">
             <MrDoodles/>
+            <EggRunGame/>
             <FoieGrasGame/>
         </div>
     );
