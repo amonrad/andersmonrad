@@ -15,10 +15,10 @@ export default function Esophon() {
                 {/* Floating Image */}
                 <img 
                     src="/images/Installations/EsophonPic1.jpeg" 
-                    className="w-1/2 h-auto float-left mr-4 mb-2" 
+                    className="w-1/3 h-auto float-left mr-4 mb-2" 
                     alt="EsophonPic1" 
                 />
-                <div className="w-1/2 float-left mr-4 mb-2">
+                <div className="w-1/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe className="absolute inset-0 w-full h-full" 
                             src="https://www.youtube.com/embed/2M-qbI9FaVM?si=UqH9vJfseVqeuQ3f" 
