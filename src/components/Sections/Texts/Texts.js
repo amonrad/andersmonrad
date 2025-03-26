@@ -3,7 +3,7 @@ import Seismograf from "./contents/Seismograf";
 
 export default function Texts() {
     return (
-        <div className="p-4 text-black bg-white bg-opacity-35 text-center">
+        <div className="text-black text-center space-y-4">
             <EMPinterview/>
             <Seismograf/>
         </div>
