@@ -7,7 +7,7 @@ import EMPsamlet from "./contents/EMPsamlet";
 
 export default function Releases() {
     return (
-        <div className="p-4 text-black bg-white bg-opacity-35 text-center">
+        <div className="text-black text-center space-y-4">
             <MaerskVinyl/>
             <ApopheniaVinyl/>
             <AdvancedVinyl/>
