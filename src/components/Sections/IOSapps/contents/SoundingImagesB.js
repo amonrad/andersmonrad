@@ -16,7 +16,7 @@ export default function SoundingImagesB() {
                     <div className="relative w-full aspect-video">
                         <iframe 
                             className="absolute inset-0 w-full h-full" 
-                            src="https://player.vimeo.com/video/203266880" 
+                            src="https://www.youtube.com/embed/lOPmMgoayNU?si=mAQ9U4w-RH69Hx9p" 
                             title="SoundingImagesA Video" 
                             allowFullScreen
                         ></iframe>

@@ -3,23 +3,61 @@ import { useState, useEffect, useRef } from "react";
 export default function Accordion({ title, displayName, imageSrc, content, styles, isOpen, onToggle }) {
     const accordionRef = useRef(null); // Reference to track the accordion's position
     const [showFloatingBar, setShowFloatingBar] = useState(false); // Controls floating bar visibility
+    const [sidebarPosition, setSidebarPosition] = useState(0);
 
     const floatingSidebarHeight = 40; // this is the actual "width" when rotated
+
+    // Debounce function to limit the number of times a function is called
+    const debounce = (func, delay) => {
+        let timeout;
+        return (...args) => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func(...args), delay);
+        };
+    };
 
     useEffect(() => {
         if (!isOpen) {
             setShowFloatingBar(false);
             return;
         }
+        else {
+            setShowFloatingBar(true);
+        }
 
-        const handleScroll = () => {
+        const handleScroll = debounce(() => {
             if (!accordionRef.current) return;
 
             const rect = accordionRef.current.getBoundingClientRect();
-            const isVisible = rect.top < window.innerHeight && rect.bottom > 0; // Check if accordion is in view
 
-            setShowFloatingBar(isVisible);
-        };
+            if (!isOpen) return;
+
+
+
+            // JEG MANGLER AT FINDE DENNE VÆRDI!!!!
+            const rotatedSidebarHeight = 260;
+
+
+            
+            const topOfAccordion = rect.top; // Top of accordion relative to page
+            const bottomOfAccordion = rect.bottom - rotatedSidebarHeight; // + window.scrollY - topBarHeight;
+
+            
+
+            // Calculate the potential sidebar position (taking rotation into account)
+            let newSidebarPosition = window.innerHeight * 0.25;
+            //let newSidebarPosition = accordionY; // Ensure the sidebar doesn't go above the accordion top
+    
+            // If the sidebar position is too high (i.e., above the top of the accordion), adjust it
+            if (newSidebarPosition < topOfAccordion - floatingSidebarHeight) {
+                newSidebarPosition = topOfAccordion - floatingSidebarHeight; // Prevent sidebar from going above the accordion
+            }
+            else if (newSidebarPosition > bottomOfAccordion) {
+                newSidebarPosition = bottomOfAccordion;
+            }
+    
+            setSidebarPosition(newSidebarPosition);
+        });
 
         window.addEventListener("scroll", handleScroll);
         handleScroll(); // Run initially to check visibility
@@ -85,16 +123,17 @@ export default function Accordion({ title, displayName, imageSrc, content, style
             style={{
                 height: `${floatingSidebarHeight}px`, // Set the height (rotated sidebar's width)
                 transformOrigin: "left bottom",  // Rotate around the center
+                top: `${sidebarPosition}px`
             }}
         >
             <div className="flex items-center space-x-2 transform">
                 {/* Display Name */}
-                <div className="text-lg font-semibold text-white whitespace-nowrap">
+                <div className="text-lg font-semibold text-black whitespace-nowrap">
                     {displayName}
                 </div>
 
                 {/* Close Button */}
-                <button className="text-white hover:text-gray-300 text-lg font-bold" onClick={() => {
+                <button className="text-black hover:text-gray-300 text-lg font-bold" onClick={() => {
                     onToggle(null);
                     setTimeout(() => {
                         const element = document.getElementById(title);
