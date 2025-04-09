@@ -7,8 +7,8 @@ export default function IOSapps() {
     return (
         <div className="text-black text-center space-y-4">
             <VisualStudies/>
-            <SoundingImagesA/>
             <SoundingImagesB/>
+            <SoundingImagesA/>
             <VirtuosoApp/>
         </div>
     );
