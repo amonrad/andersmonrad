@@ -1,59 +1,69 @@
-# macOS system files
+# macOS System Files
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# macOS Thumbnails
+Icon?
 ._*
-
-# macOS metadata files
 .Spotlight-V100
 .Trashes
-Icon?
 .DefinedNSTemporaryDirectory
 
-# VS Code settings and workspace files
-.vscode/
-*.code-workspace
-
-# Node.js & npm
+# Node Modules
 node_modules/
-npm-debug.log
-yarn-error.log
-pnpm-debug.log
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
-# Build & Cache
+# Dependency Locks (you can choose to keep one)
+# If you're using npm, keep only package-lock.json
+# If you're using yarn or pnpm, keep their lock files instead
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# Uncomment only the lock file you're actually using:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Build Output
 dist/
 build/
 .cache/
 .next/
 out/
+tmp/
+temp/
+*.tsbuildinfo
 
-# Temporary files
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Logs & Temp Files
 *.log
 *.tmp
 *.swp
 *.swo
 *.swn
-.nyc_output/
-coverage/
 
 # Environment Variables
 .env
-.env.local
-.env.development
-.env.production
-.env.test
+.env.*
+!.env.example  # Keep example file to show required env vars
 
-# IDE & Editor-Specific Files
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
 .idea/
 *.iml
+
+# Sublime Text
 *.sublime-workspace
 *.sublime-project
 
-# OS-Specific
+# Windows System Files
 Thumbs.db
 Desktop.ini
+
+# Optional: Ignore local Git hooks
+.husky/_/
