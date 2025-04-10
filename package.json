@@ -1,7 +1,7 @@
 {
   "name": "react-hjemmeside",
   "version": "0.1.0",
-  "homepage": "http://www.andersmonrad.dk/",
+  "homepage": "https://www.andersmonrad.dk/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
