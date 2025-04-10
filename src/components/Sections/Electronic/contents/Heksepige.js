@@ -11,10 +11,10 @@ export default function Heksepige() {
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     Heksepige (2005) -  <LinkItem url="/files/Heksepige.pdf" text="(Score)" />
                 </h2>
-
+                
                 {/* Floating Image */}
                 <img 
-                    src="/images/ElectronicMusic/WhopAtNorberg.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/ElectronicMusic/WhopAtNorberg.jpeg`} 
                     className="w-1/3 h-auto float-right mr-4 mb-2" // ✅ Image floats right, text wraps around it
                     alt="Prepositions" 
                 />

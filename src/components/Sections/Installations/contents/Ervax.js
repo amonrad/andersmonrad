@@ -11,10 +11,10 @@ export default function Ervax() {
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     Ervax (2011)
                 </h2>
-
+                
                 {/* Floating Image */}
                 <img 
-                    src="/images/Installations/ErvaxInstallation.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/Installations/ErvaxInstallation.jpeg`}
                     className="w-1/3 h-auto float-left mr-4 mb-2" 
                     alt="ErvaxPic1" 
                 />

@@ -12,18 +12,20 @@ export default function Artwork() {
     const [shuffledImagesB, setShuffledImagesB] = useState([]);
 
     useEffect(() => {
+        const basePath = process.env.PUBLIC_URL;
+
         const images = [
-            "/images/Artwork/artwork1.jpg",
-            "/images/Artwork/artwork2.jpg",
-            "/images/Artwork/artwork3.jpg",
-            "/images/Artwork/artwork4.jpg",
-            "/images/Artwork/artwork5.jpg",
-            "/images/Artwork/artwork6.jpg"
+            `${basePath}/images/Artwork/artwork1.jpg`,
+            `${basePath}/images/Artwork/artwork2.jpg`,
+            `${basePath}/images/Artwork/artwork3.jpg`,
+            `${basePath}/images/Artwork/artwork4.jpg`,
+            `${basePath}/images/Artwork/artwork5.jpg`,
+            `${basePath}/images/Artwork/artwork6.jpg`
         ];
         const imagesB = [
-            "/images/Artwork/artwork7.jpg",
-            "/images/Artwork/artwork8.jpg",
-            "/images/Artwork/artwork9.jpg"
+            `${basePath}/images/Artwork/artwork7.jpg`,
+            `${basePath}/images/Artwork/artwork8.jpg`,
+            `${basePath}/images/Artwork/artwork9.jpg`
         ];
 
         const shuffleArray = (array) => {

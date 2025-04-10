@@ -13,10 +13,10 @@ export default function HCAplaygate() {
                 </h2>
 
                 {/* responsive design: w-1/3 (default) md:w-1/5 (medium skærm) lg:w-1/6 (stor skærm) */}
-
+                
                 {/* Floating Image */}
                 <img 
-                    src="/images/Commercial/HCA-TaleRun.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/Commercial/HCA-TaleRun.jpeg`} 
                     className="w-1/3 md:w-1/5 lg:w-1/6 h-auto float-left mr-4 mb-2" 
                     alt="HCApic" 
                 />

@@ -11,10 +11,10 @@ export default function ApopheniaExh() {
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     Apophenia Cloud Travel Apparatus (2014)
                 </h2>
-
+                
                 {/* Floating Image */}
                 <img 
-                    src="/images/Installations/TaekkerExhibition.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/Installations/TaekkerExhibition.jpeg`}
                     className="w-1/2 h-auto float-left mr-4 mb-2" 
                     alt="ApophPic" 
                 />
