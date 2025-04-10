@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/andersmonrad/static/css/main.258a87a6.css",
-    "main.js": "/andersmonrad/static/js/main.fa5462e1.js",
+    "main.js": "/andersmonrad/static/js/main.1ccdf38e.js",
     "static/js/453.80e02c3f.chunk.js": "/andersmonrad/static/js/453.80e02c3f.chunk.js",
     "index.html": "/andersmonrad/index.html",
     "main.258a87a6.css.map": "/andersmonrad/static/css/main.258a87a6.css.map",
-    "main.fa5462e1.js.map": "/andersmonrad/static/js/main.fa5462e1.js.map",
+    "main.1ccdf38e.js.map": "/andersmonrad/static/js/main.1ccdf38e.js.map",
     "453.80e02c3f.chunk.js.map": "/andersmonrad/static/js/453.80e02c3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.258a87a6.css",
-    "static/js/main.fa5462e1.js"
+    "static/js/main.1ccdf38e.js"
   ]
 }
