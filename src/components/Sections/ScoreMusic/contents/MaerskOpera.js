@@ -9,12 +9,14 @@ export default function MaerskOpera() {
 
                 {/* Wrapped Text */}
                 <h2 className="text-2xl font-bold pb-8 text-center">
-                    The Mærsk Opera (2012-16) - <LinkItem url="/files/MærskOperaen.pdf" text="(Score)" />
+                    The Mærsk Opera (2012-16) - <LinkItem url={`${process.env.PUBLIC_URL}/files/MærskOperaen.pdf`} text="(Score)" />
+                    {/* <LinkItem url="/files/MærskOperaen.pdf" text="(Score)" /> */}
                 </h2>
 
                 {/* Floating Image */}
-                <img 
-                    src="/images/ScoreMusic/xlarge_superflex_gaven.jpg" 
+                <img  
+                    src={`${process.env.PUBLIC_URL}/images/ScoreMusic/xlarge_superflex_gaven.jpg`} 
+                    // src="/images/ScoreMusic/xlarge_superflex_gaven.jpg" 
                     className="w-1/2 h-auto float-left mr-4 mb-2" 
                     alt="MaerskPic" 
                 />
