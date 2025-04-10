@@ -1,0 +1,69 @@
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.DefinedNSTemporaryDirectory
+
+# Node Modules
+node_modules/
+
+# Dependency Locks (you can choose to keep one)
+# If you're using npm, keep only package-lock.json
+# If you're using yarn or pnpm, keep their lock files instead
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# Uncomment only the lock file you're actually using:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Build Output
+dist/
+build/
+.cache/
+.next/
+out/
+tmp/
+temp/
+*.tsbuildinfo
+
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Logs & Temp Files
+*.log
+*.tmp
+*.swp
+*.swo
+*.swn
+
+# Environment Variables
+.env
+.env.*
+!.env.example  # Keep example file to show required env vars
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Windows System Files
+Thumbs.db
+Desktop.ini
+
+# Optional: Ignore local Git hooks
+.husky/_/
