@@ -45,13 +45,13 @@ export default function Artwork() {
             </p>
 
             <div className="grid grid-cols-2 gap-8 mt-8">
-                {shuffledImages.map((src, index) => (
-                    <img key={`A-${index}`} src={src} alt={`artwork${index + 1}`} className="w-full h-auto" />
+                {shuffledImages.map((src) => (
+                    <img key={src} src={src} alt="artwork" className="w-full h-auto" />
                 ))}
             </div>
             <div className="grid grid-cols-3 gap-8 mt-8 pb-10">
-                {shuffledImagesB.map((src, index) => (
-                    <img key={`B-${index}`} src={src} alt={`artwork${index + 1}`} className="w-full h-auto" />
+                {shuffledImagesB.map((src) => (
+                    <img key={src} src={src} alt="artwork" className="w-full h-auto" />
                 ))}
             </div>
         </div>
