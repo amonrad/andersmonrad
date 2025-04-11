@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export default function Artwork() {
     const artworkText = [
         "In addition to my musical activities, I’m very interested in visual art and have been doing a lot of visual artwork myself over the years. This is a selection of my acrylic paintings created between 2005-2014.",
-        <br key="break" />,
+        <br/>,
         "The style is inspired by 60’s OpArt, but my main interest is a musical, “polyphonic” approach, with multiple, simultaneous motives layered on top of each other. Accordingly, I have been very interested in the direct integration between visuals and sound – which was a key motivation for my work with audio-visual digital projects."
     ];
 

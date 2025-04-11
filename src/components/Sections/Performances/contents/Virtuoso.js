@@ -2,7 +2,7 @@ import LinkItem from "../../../LinkItem";
 
 export default function Virtuoso() {
     return (
-        <div className="pt-8 p-2 bg-white bg-opacity-35 w-full flex flex-col items-start">
+        <div className="pt-8 p-2 bg-white bg-opacity-35 w-full flex flex-col items-start">            
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
                    
                 <h2 className="text-2xl font-bold pb-8 text-center">'Virtuoso'-performance</h2>

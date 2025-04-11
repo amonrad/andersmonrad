@@ -24,10 +24,10 @@ export default function SoundingImagesB() {
                 </div>
             
                 <p>
-                “Sounding Images #7-12” is an audiovisual IOS app, which I developed in 2017-18 as a follow up to its predecessor “Sounding Images #1-6” from 2016. <br key="break" />
-                Whereas “Sounding Images #1-6” was based on concrete sound recordings, “Sounding Images #7-12” is based entirely on sound synthesis, with no prerecorded sounds whatsoever. <br key="break" />
-                The App was first presented at a concert at the experimental music festival <LinkItem url="https://www.snyk.dk/en/about-gong-tomorrow" text="'Gong Tomorrow'" /> November 10th 2018 at the Copenhagen venue <LinkItem url="https://alicecph.com/" text="ALICE" />, with my longtime collaborator <LinkItem url="http://www.yinghsuehchen.com/" text="Ying-Hsueh Chen" />. <br key="break" />
-                Here, the app was showcased as part of a spectacular musical duo-performance, where I performed with the app in a musical dialogue with Ying-Hsueh Chen, performing on her acoustic percussion instruments. <br key="break" />    
+                “Sounding Images #7-12” is an audiovisual IOS app, which I developed in 2017-18 as a follow up to its predecessor “Sounding Images #1-6” from 2016. <br/>
+                Whereas “Sounding Images #1-6” was based on concrete sound recordings, “Sounding Images #7-12” is based entirely on sound synthesis, with no prerecorded sounds whatsoever. <br/>
+                The App was first presented at a concert at the experimental music festival <LinkItem url="https://www.snyk.dk/en/about-gong-tomorrow" text="'Gong Tomorrow'" /> November 10th 2018 at the Copenhagen venue <LinkItem url="https://alicecph.com/" text="ALICE" />, with my longtime collaborator <LinkItem url="http://www.yinghsuehchen.com/" text="Ying-Hsueh Chen" />. <br/>
+                Here, the app was showcased as part of a spectacular musical duo-performance, where I performed with the app in a musical dialogue with Ying-Hsueh Chen, performing on her acoustic percussion instruments. <br/>    
                 Unfortunately “Sounding Images #7-12″ is not currently available for download on appstore.
                           
                 </p>  
