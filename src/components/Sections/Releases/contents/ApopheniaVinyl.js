@@ -11,10 +11,10 @@ export default function ApopheniaVinyl() {
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     "Apophenia Cloud Travel Apparatus" vinyl LP (2019)
                 </h2>
-
+                
                 {/* Floating Image */}
                 <img 
-                    src="/images/Releases/ApopheniaLP.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/Releases/ApopheniaLP.jpeg`}
                     className="w-1/3 h-auto float-left mr-4 mb-2" 
                     alt="ApophLPpic" 
                 />

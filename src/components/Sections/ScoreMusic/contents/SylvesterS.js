@@ -8,9 +8,9 @@ export default function SylvesterS() {
 
                 {/* Headline */}
                 <h2 className="text-2xl font-bold pb-8 text-center">
-                    Sylvester The Symphony (2010) - <LinkItem url="/files/SylvesterTheSymphonyScore.pdf" text="(Score)" />
+                    Sylvester The Symphony (2010) - <LinkItem url={`${process.env.PUBLIC_URL}/files/SylvesterTheSymphonyScore.pdf`} text="(Score)" />
                 </h2>
-
+                
                 {/* Text */}
                 <p>
                 A “children’s symphony” composed in 2010, for my son Sylvester, who was born that same year. The Title refers to the children's cartoon <LinkItem url="https://www.youtube.com/watch?v=HQzABYlPcGc" text="Tubby the Tuba" /> and the musical style reflects my great interest in (and inspiration from) American orchestral composers Gershwin, Bernstein, Copland etc. This recording is from the first performance at 

@@ -11,10 +11,10 @@ export default function AdvancedVinyl() {
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     "Advanced Avantgarde" vinyl LP (2018)
                 </h2>
-
+                
                 {/* Floating Image */}
                 <img 
-                    src="/images/Releases/AdvancedAvantgarde.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/Releases/AdvancedAvantgarde.jpeg`}
                     className="w-1/3 h-auto float-left mr-4 mb-2" 
                     alt="AdvancedLPpic" 
                 />

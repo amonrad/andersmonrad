@@ -11,10 +11,10 @@ export default function EMPSamlet() {
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     “Else Marie Pade - Samlede tekster” (2017)
                 </h2>
-
+                
                 {/* Floating Image */}
                 <img 
-                    src="/images/Releases/EMP-udgivelse.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/Releases/EMP-udgivelse.jpeg`} 
                     className="w-1/3 h-auto float-left mr-4 mb-2" 
                     alt="EMPsamletPic" 
                 />

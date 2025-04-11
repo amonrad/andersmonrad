@@ -54,7 +54,7 @@ function App() {
                 <Accordion 
                     title="scoremusic"
                     displayName="SCORE MUSIC"
-                    imageSrc="/images/score_music.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/score_music.jpeg`} 
                     content={<ScoreMusic />} 
                     styles={accordionStyles.scoremusic}
                     isOpen={openSection === "scoremusic"} // Controls if the accordion is open
@@ -64,7 +64,7 @@ function App() {
                 <Accordion 
                     title="iosapps"
                     displayName="IOS APPS"
-                    imageSrc="/images/ios_apps.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/ios_apps.jpeg`} 
                     content={<IOSapps />} 
                     styles={accordionStyles.iosapps}
                     isOpen={openSection === "iosapps"}
@@ -74,7 +74,7 @@ function App() {
                 <Accordion 
                     title="installations"
                     displayName="INSTALLATIONS"
-                    imageSrc="/images/installations.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/installations.jpeg`} 
                     content={<Installations />} 
                     styles={accordionStyles.installations}
                     isOpen={openSection === "installations"}
@@ -84,7 +84,7 @@ function App() {
                 <Accordion 
                     title="visualart" 
                     displayName="VISUAL ART"
-                    imageSrc="/images/Artwork/artwork.jpg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/Artwork/artwork.jpg`} 
                     content={<Artwork />} 
                     styles={accordionStyles.artwork}
                     isOpen={openSection === "visualart"}
@@ -94,7 +94,7 @@ function App() {
                 <Accordion 
                     title="piano"
                     displayName="PIANO"
-                    imageSrc="/images/piano.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/piano.jpeg`} 
                     content={<Piano />} 
                     styles={accordionStyles.piano}
                     isOpen={openSection === "piano"}
@@ -104,7 +104,7 @@ function App() {
                 <Accordion 
                     title="electronicmusic"
                     displayName="ELECTRONIC MUSIC"
-                    imageSrc="/images/electronic.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/electronic.jpeg`}
                     content={<Electronic />} 
                     styles={accordionStyles.electronic}
                     isOpen={openSection === "electronicmusic"}
@@ -114,7 +114,7 @@ function App() {
                 <Accordion 
                     title="performances" 
                     displayName="PERFORMANCES"
-                    imageSrc="/images/performances.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/performances.jpeg`} 
                     content={<Performances />} 
                     styles={accordionStyles.performances}
                     isOpen={openSection === "performances"}
@@ -124,7 +124,7 @@ function App() {
                 <Accordion 
                     title="prototypes"
                     displayName="PROTOTYPES"
-                    imageSrc="/images/prototypes.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/prototypes.jpeg`} 
                     content={<Prototypes />} 
                     styles={accordionStyles.prototypes}
                     isOpen={openSection === "prototypes"}
@@ -134,7 +134,7 @@ function App() {
                 <Accordion 
                     title="commercial"
                     displayName="COMMERCIAL"
-                    imageSrc="/images/commercial.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/commercial.jpeg`} 
                     content={<Commercial />} 
                     styles={accordionStyles.commercial}
                     isOpen={openSection === "commercial"}
@@ -144,7 +144,7 @@ function App() {
                 <Accordion 
                     title="releases"
                     displayName="RELEASES"
-                    imageSrc="/images/releases.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/releases.jpeg`}
                     content={<Releases />} 
                     styles={accordionStyles.releases}
                     isOpen={openSection === "releases"}
@@ -154,7 +154,7 @@ function App() {
                 <Accordion 
                     title="texts"
                     displayName="TEXTS"
-                    imageSrc="/images/texts.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/texts.jpeg`} 
                     content={<Texts />} 
                     styles={accordionStyles.texts}
                     isOpen={openSection === "texts"}
@@ -164,7 +164,7 @@ function App() {
                 <Accordion 
                     title="about"
                     displayName="ABOUT"
-                    imageSrc="/images/bio_pic.jpeg" 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/bio_pic.jpeg`} 
                     content={<About />} 
                     styles={accordionStyles.about}
                     isOpen={openSection === "about"}

@@ -11,10 +11,10 @@ export default function EMPinterview() {
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     Interview with Else Marie Pade (2005)
                 </h2>
-
+                
                 {/* Floating Image */}
                 <img 
-                    src="/images/Texts/EMPsLejlighed.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/Texts/EMPsLejlighed.jpeg`} 
                     className="w-1/2 h-auto float-left mr-4 mb-2" 
                     alt="EMPpic" 
                 />

@@ -9,16 +9,16 @@ export default function Prepositions() {
                 
                 {/* Floating Image */}
                 <img 
-                    src="/images/ScoreMusic/PrepositionsBillede.jpeg" 
+                    src={`${process.env.PUBLIC_URL}/images/ScoreMusic/PrepositionsBillede.jpeg`}
                     className="w-1/5 h-auto float-left mr-4 mb-2" // ✅ Image floats right, text wraps around it
                     alt="Prepositions" 
                 />
 
                 {/* Wrapped Text */}
                 <h2 className="text-2xl font-bold pb-8 text-left">
-                    Prepositions (2015) - <LinkItem url="/files/Prepositions.pdf" text="(Score)" />
+                    Prepositions (2015) - <LinkItem url={`${process.env.PUBLIC_URL}/files/Prepositions.pdf`} text="(Score)" />
                 </h2>
-
+                
                 <p>
                     “Prepositions” is a song cycle for soprano and piano, which consists of 9 songs set to texts by the Norwegian author <LinkItem url="https://aschehoug.no/Demian_Vitanza" text="Demian Vitanza" />. The work dates from the spring of 2015, 
                     composed in close collaboration and dialogue with the author and the soprano Ly Tran, who premiered the work at <LinkItem url="http://hindsgavlfestival.dk" text="Hindsgavl Festival" /> in 2015, with myself playing the piano part. <br/>
