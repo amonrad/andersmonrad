@@ -17,13 +17,14 @@ export default function SylvesterS() {
                 <LinkItem url="https://www.dkdm.dk/da" text="The Royal Danish Academy of Music" />, played by <LinkItem url="https://copenhagenphil.dk" text="The Copenhagen Phil" /> (conducted by Jesper Nordin), November 5, 2010: .
                 </p>
 
-                {/* Embedded Audio */}
-                <iframe 
+                
+                {/* <iframe 
                     className="w-full h-14 mt-2"
                     src="https://www.youtube.com/embed/1uMjVfU4aZc?si=O84Gb8UJ3fWpY623&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="SylvesterS Audio"
                     allow="encrypted media"
-                ></iframe>
+                ></iframe> */}
+                
             </div>
         </div>
     );

@@ -11,8 +11,8 @@ export default function VirtuosoApp() {
                     Virtuoso (2014)
                 </h2>
 
-                {/* Floating Video */}
-                <div className="w-2/3 float-left mr-4 mb-2">
+                
+                {/* <div className="w-2/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe 
                             className="absolute inset-0 w-full h-full" 
@@ -21,7 +21,7 @@ export default function VirtuosoApp() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </div>
+                </div> */}
             
                 <p>
                 “Virtuoso” was my first music app for iPhone. Unfortunately, it is awaiting update, and thus not available on appstore at the moment. It will soon be made available again. <br/>

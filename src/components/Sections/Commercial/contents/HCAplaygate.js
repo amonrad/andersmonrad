@@ -25,7 +25,7 @@ export default function HCAplaygate() {
                 These are theme-songs I composed for the commercial kids’ game <LinkItem url="https://apps.apple.com/dk/app/h-c-andersen-eventyrl%C3%B8b/id771674113?l=da" text="HCA playgate" /> in 2013, produced in collaboration with <LinkItem url="https://napnokgames.com" text="KnapNok Games" />. The game is available on appstore, released by the Danish playground company <LinkItem url="https://www.kompan.com/da/dk" text="Kompan" />, to promote a new playground concept based on the fairytales of H.C. Andersen. Thus, these are theme songs for “The Tinderbox”, “The Little Mermaid” and “The Ugly Duckling” – with musical inspiration ranging from the Danish composer H.C. Lumbye, “Aqaurium” by Saint-Säens to “Peter & the Wolf” by Prokofiev. Midway through, each of the pieces are repeated with expanded orchestration – intended for the “frenzy”-mode parts of the game…    
                 </p>
 
-                {/* Embedded Audio */}
+{/*                 
                 <iframe 
                     className="w-full h-14 mt-5"  // Full width with minimal height
                     src="https://www.youtube.com/embed/uWLskss8Uwo?si=8SOhowtu645_wWyT&controls=1&showinfo=0&autoplay=0&mute=0"
@@ -43,7 +43,9 @@ export default function HCAplaygate() {
                     src="https://www.youtube.com/embed/AZkhHf6vMAg?si=906o-K9IFExaXZFc&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="HCACAudio"
                     allow="encrypted media"
-                ></iframe>
+                ></iframe> */}
+
+
             </div>
         </div>
     );

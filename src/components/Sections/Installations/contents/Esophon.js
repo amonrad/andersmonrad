@@ -18,7 +18,8 @@ export default function Esophon() {
                     className="w-1/3 h-auto float-left mr-4 mb-2" 
                     alt="EsophonPic1" 
                 />
-                <div className="w-1/3 float-left mr-4 mb-2">
+                
+                {/* <div className="w-1/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe className="absolute inset-0 w-full h-full" 
                             src="https://www.youtube.com/embed/2M-qbI9FaVM?si=UqH9vJfseVqeuQ3f" 
@@ -26,7 +27,9 @@ export default function Esophon() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </div>
+                </div> */}
+
+
                 <p>
                 The Esophon is an interactive sound installation. By operating the three touch-sensitive consoles, audience members collaborate to compose a piece of music. The Esophon was developed in collaboration with my long time collaborator and friend <LinkItem url="https://www.jim1000sprog.dk/works/esophon" text="Simon Bækdahl Nielsen" />, who developed the physical installation. I developed the software, music-generating part. The Esophon was developed for the permanent exhibition at <LinkItem url="https://en.natmus.dk/museums-and-palaces/the-danish-music-museum/" text="The Danish Music Museum" />, where it is currently exhibited.            
                 </p>

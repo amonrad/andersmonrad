@@ -11,7 +11,7 @@ export default function SoundingImagesA() {
                     Sounding Images #1-6 (2016)
                 </h2>
 
-                {/* Floating Video */}
+{/*                 
                 <div className="w-2/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe 
@@ -21,7 +21,7 @@ export default function SoundingImagesA() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </div>
+                </div> */}
             
                 <p>
                 “Sounding Images” is a project, which I intended to become an ongoing series of interactive audiovisual installations, combining directly related algorithmic graphics with sound & music. <br/>

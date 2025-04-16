@@ -24,8 +24,8 @@ export default function Heksepige() {
                     
                 </p>
 
-                {/* Embedded Audio */}
-                <iframe 
+                
+                {/* <iframe 
                     className="w-full h-14 mt-2"
                     src="https://www.youtube.com/embed/q8imDU78z2s?si=SxfPobhv6EeComqj&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="HeksepigeA Audio"
@@ -42,7 +42,8 @@ export default function Heksepige() {
                     src="https://www.youtube.com/embed/73o9Msf7tco?si=h4ywp2cMWwNsyuI_&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="HeksepigeC Audio"
                     allow="encrypted media"
-                ></iframe>
+                ></iframe> */}
+
             </div>
         </div>
     );

@@ -23,13 +23,14 @@ export default function ApopheniaExh() {
                 In 2014 I created the sound design for visual artist <LinkItem url="https://artmatter.dk/profile/jacob-taekker/" text="Jacob Tækker" />’s exhibition “<LinkItem url="https://overgaden.org/en/exhibitions/apophenia-cloud-travel-apparatus" text="‘Apophenia Cloud Travel Apparatus’" />, held at <LinkItem url="https://overgaden.org/en" text="Overgaden - Institute of Contemporary Art" /> during spring 2014. The Sound design was based on superimposed timestretched household sounds, generated from a granular synthesis-setup (programmed in open source software <LinkItem url="https://puredata.info" text="Pure Data" />) with in-build slight irregularities resulting in discrete rhythmical patterns. A vinyl record production documenting the exhibition and sound design will soon be released during 2017. Listen to a short fragment from the sound design here:            
                 </p>
 
-                {/* Embedded Audio */}
+{/*                 
                 <iframe 
                     className="w-full h-14 mt-5"  // Full width with minimal height
                     src="https://www.youtube.com/embed/lZ4twFSwBJA?si=KTQvvkX8uhkxOnbN&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="ApophAudio"
                     allow="encrypted media"
-                ></iframe>
+                ></iframe> */}
+            
             </div>
         </div>
     );

@@ -11,8 +11,8 @@ export default function VisualStudies() {
                     Visual Studies (2023)
                 </h2>
 
-                {/* Floating Video */}
-                <div className="w-2/3 float-left mr-4 mb-2">
+                
+                {/* <div className="w-2/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe 
                             className="absolute inset-0 w-full h-full" 
@@ -21,7 +21,7 @@ export default function VisualStudies() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </div>
+                </div> */}
             
                 <p>
                 “Visual Studies” was originally developed as a macOS-application, intended for audiovisual live performances by a music ensemble. For this purpose, I even constructed a traditional sheet music <LinkItem url={`${process.env.PUBLIC_URL}/files/VisualStudiesScore.pdf`} text="score" />, with instructions for how musicians should play the virtual instruments, via MIDI drum pads. Thereby the project combines my background as a classically trained composer, with my more recently acquired skills as a digital, audiovisual software developer. This project also marks the first time I have experimented with coding graphic shaders.<br/>

@@ -16,13 +16,15 @@ export default function Paaskesondag() {
                 Short piano tune, composed for the short film “Påskesøndag” (Easter sunday) by the Danish film director <LinkItem url="https://www.dfi.dk/viden-om-film/filmdatabasen/person/jonas-grum" text="Jonas Grum" />. 
                 </p>
 
-                {/* Embedded Audio */}
+{/*                 
                 <iframe 
                     className="w-full h-14 mt-5"  // Full width with minimal height
                     src="https://www.youtube.com/embed/vwiWZ0HyfEI?si=yPGgT-ZoSAcuphDB&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="paaskesondagAudio"
                     allow="encrypted media"
-                ></iframe>
+                ></iframe> */}
+
+
             </div>
         </div>
     );

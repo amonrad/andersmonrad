@@ -26,8 +26,8 @@ export default function MaerskOpera() {
                     . Later re-arranged and recorded in 2016, and included in the film <LinkItem url="https://superflex.net/works/the_maersk_opera" text="The Mærsk Opera" /> by SUPERFLEX, premiered at <LinkItem url="https://cphdox.dk/da/" text="CPH DOX" /> 2017.<br/> A recording of the Opera is released on the Danish label <LinkItem url="https://www.dacapo-records.dk/da/udgivelser/monrad-maersk-operaen-lp" text="DACAPO"/>.            
                 </p>
 
-                {/* Embedded Audio */}
-                <iframe 
+                
+                {/* <iframe 
                     className="w-full h-14 mt-5"  // Full width with minimal height
                     src="https://www.youtube.com/embed/iNvFo66XMSE?si=8XcmFbalH95CRMbm&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="MærskA Audio"
@@ -56,7 +56,8 @@ export default function MaerskOpera() {
                     src="https://www.youtube.com/embed/tAE4NkpMLVE?si=yZ7gcw8_q_UtiKWU&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="MærskE Audio"
                     allow="encrypted media"
-                ></iframe>
+                ></iframe> */}
+                
             </div>
         </div>
     );

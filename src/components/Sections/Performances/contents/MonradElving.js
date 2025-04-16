@@ -8,8 +8,8 @@ export default function MonradElving() {
                    
                 <h2 className="text-2xl font-bold pb-8 text-center">'Monrad/Elving'-performance</h2>
                 
-                {/* Responsive iframe wrapper */}
-                <div className="w-2/3 float-left mr-4 mb-2">
+                
+                {/* <div className="w-2/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe className="absolute inset-0 w-full h-full" 
                             src="https://www.youtube.com/embed/p70Tl_gGhG0?si=qSgTQ9I8xfi7ZoiB" 
@@ -17,7 +17,7 @@ export default function MonradElving() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </div>
+                </div> */}
 
                 <p>
                 Spectacular rooftop-performance with poet <LinkItem url="https://www.discogs.com/artist/1737432-Jesper-Elving?srsltid=AfmBOorDQhjVe40rZmuumODERqgNZ5rXHMlx56wIIS2o2h0BUEDAZ_lL" text="Jesper Elving" /> from <LinkItem url="https://artmatter.dk/journal/lydkunstfestivalen-lak/" text="LAK Festival" />, august 2012. I'm controlling a generative music setup from my laptop.

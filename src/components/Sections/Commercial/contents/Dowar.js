@@ -23,13 +23,13 @@ export default function Dowar() {
                     DOWAR is the name of a lounge-combo, in which I play the piano and do most of the arrangements. Apart from me, DOWAR consists of <LinkItem url="https://www.icebergmusicgroup.com/publishing/songwriters/mikkel-petterson.aspx" text="Mikkel Petterson" /> (Guitar), <LinkItem url="https://soundcloud.com/marie-louise-von-b-low" text="Marie Louise von Bülow" /> (Double bass) & <LinkItem url="https://devilduckrecords.com/artists/gone/dangers-of-the-sea/" text="Andreas Estrup" /> (Drums/Percussion). The style is heavily influenced by the pianist <LinkItem url="https://en.wikipedia.org/wiki/Carmen_Cavallaro" text="Carmen Cavallaro" />, and our repertoire consists mainly of tunes from the 50’s and 60’s. This particular tune “Gør hvad du vil” was actually composed by my father’s uncle Henry Hannibal (1916-2013) for the <LinkItem url="https://da.wikipedia.org/wiki/Dansk_Melodi_Grand_Prix_1960" text="Eurovision" /> contest in 1960. I made this arrangement:    
                 </p>
 
-                {/* Embedded Audio */}
-                <iframe 
+                {/* <iframe 
                     className="w-full h-14 mt-5"  // Full width with minimal height
                     src="https://www.youtube.com/embed/g3AzGnJY-y8?si=liUqvq9OLvd49uFj&controls=1&showinfo=0&autoplay=0&mute=0"
                     title="DowarAudio"
                     allow="encrypted media"
-                ></iframe>
+                ></iframe>  */}
+                
             </div>
         </div>
     );

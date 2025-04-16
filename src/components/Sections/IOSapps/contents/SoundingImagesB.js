@@ -11,8 +11,8 @@ export default function SoundingImagesB() {
                 Sounding Images #7-12 (2018)
                 </h2>
 
-                {/* Floating Video */}
-                <div className="w-2/3 float-left mr-4 mb-2">
+                
+                {/* <div className="w-2/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe 
                             className="absolute inset-0 w-full h-full" 
@@ -21,7 +21,7 @@ export default function SoundingImagesB() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </div>
+                </div> */}
             
                 <p>
                 “Sounding Images #7-12” is an audiovisual IOS app, which I developed in 2017-18 as a follow up to its predecessor “Sounding Images #1-6” from 2016. <br/>

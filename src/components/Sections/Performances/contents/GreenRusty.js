@@ -8,8 +8,8 @@ export default function GreenRusty() {
                    
                 <h2 className="text-2xl font-bold pb-8 text-center">'Green, Rusty Metal On A Sunken Ship'</h2>
                 
-                {/* Responsive iframe wrapper */}
-                <div className="w-2/3 float-left mr-4 mb-2">
+                
+                {/* <div className="w-2/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe className="absolute inset-0 w-full h-full" 
                             src="https://player.vimeo.com/video/27066966" 
@@ -17,7 +17,7 @@ export default function GreenRusty() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </div>
+                </div> */}
 
                 <p>
                 Video recording from the premiere of my piece “Green Rusty Metal on a sunken ship”, november 2006 at the Copenhagen venue "Plex" (now closed). I played the piano part, <LinkItem url="https://tonehoved.dk" text="Anders Børup" /> and <LinkItem url="http://jim1000sprog.dk" text="Simon Bækdahl Nielsen" /> created the live visuals.

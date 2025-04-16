@@ -8,8 +8,8 @@ export default function Quadcopter() {
                    
                 <h2 className="text-2xl font-bold pb-8 text-center">The Quadcopter Concert</h2>
                 
-                {/* Responsive iframe wrapper */}
-                <div className="w-2/3 float-left mr-4 mb-2">
+                
+                {/* <div className="w-2/3 float-left mr-4 mb-2">
                     <div className="relative w-full aspect-video">
                         <iframe className="absolute inset-0 w-full h-full" 
                             src="https://www.youtube.com/embed/g9_yaSGtlQI?si=a-CX0Z1aogXiW0pj" 
@@ -17,7 +17,7 @@ export default function Quadcopter() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </div>
+                </div> */}
 
                 <p>
                     Performance from <LinkItem url="https://tedxcopenhagen.dk/events/mobility/" text="TEDxCopenhagen" /> event, 
