@@ -12,7 +12,7 @@ export default function Piano() {
                 adNetwork={false}
                 title="Piano play?"
                 poster="maxresdefault"
-                wrapperClass="w-full h-full yt-lite"
+                wrapperClass="yt-lite"
             />
             
             {/*<div className="flex items-center justify-center h-96 w-full">
