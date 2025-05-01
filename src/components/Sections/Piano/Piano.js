@@ -1,3 +1,6 @@
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+//import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+
 export default function Piano() {
     //const pianoText = "Piano-playing is my main artistic background, and has been a central part of my artistic identity since I started playing when I was 6 years old. I played on a high level as a teenager, and participated in a few competitions. In my 20’s I abandoned the piano for a while. In later years, since I started teaching piano, I have taken up my piano playing again, and enjoy playing a wide variety of musical styles - especially the transcendental piano works of the romantic era and beyond. Here’s a little selection.";
 
@@ -6,6 +9,57 @@ export default function Piano() {
             <p className="mb-4">Piano-playing is my main artistic background, and has been a central part of my artistic identity since I started playing when I was 6 years old. I played on a high level as a teenager, and participated in a few competitions. In my 20’s I abandoned the piano for a while. In later years, since I started teaching piano, I have taken up my piano playing again, and enjoy playing a wide variety of musical styles - especially the transcendental piano works of the romantic era and beyond. Here’s a little selection.</p>
 
             <div className="grid grid-cols-3">
+
+                <div
+                className="relative col-span-2 w-full mt-8 ml-auto"
+                style={{ paddingTop: '56.25%' }} // 16:9 aspect ratio
+                >
+                    <div className="absolute top-0 left-0 w-full h-full">
+                        <LiteYouTubeEmbed
+                        id="Ffe-7T6yDhU"
+                        title="UnSospiro Video"
+                        noCookie={true}
+                        poster="maxresdefault"
+                        wrapperClass="w-full h-full"
+                        />
+                    </div>
+                </div>
+
+                {/* <div className="relative col-span-2 w-full mt-8 ml-auto" style={{ paddingTop: '56.25%' }} // 16:9 aspect ratio
+                >
+                    <div className="absolute top-0 left-0 w-full h-full">
+                        <LiteYouTubeEmbed
+                        id="Ffe-7T6yDhU"
+                        title="UnSospiro Video"
+                        noCookie={true}
+                        poster="maxresdefault"
+                        wrapperClass="w-full h-full"
+                        />
+                    </div>
+            </div> */}
+
+                {/* <div className="col-span-2 w-full mt-8 ml-auto max-w-3xl mx-auto">
+                    <LiteYouTubeEmbed
+                        id="Ffe-7T6yDhU"
+                        title="UnSospiro Video"
+                        noCookie={true}
+                        poster="maxresdefault"
+                        wrapperClass="youtube-lite-wrapper"
+                    />
+                </div> */}
+
+                {/* <div className="relative col-span-2 w-full mt-8 ml-auto" style={{ paddingTop: "56.25%" }}>
+                    <div className="absolute top-0 left-0 w-full h-full">
+                        <LiteYouTubeEmbed
+                        id="Ffe-7T6yDhU" // Video-ID
+                        title="UnSospiro Video"
+                        noCookie={true}
+                        poster="maxresdefault"
+                        />
+                    </div>
+                </div> */}
+
+
 
             {/* <div className="relative col-span-2 w-full mt-8 ml-auto" style={{ paddingTop: "56.25%" }}>
                     <iframe 
