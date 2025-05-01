@@ -10,7 +10,7 @@ export default function Piano() {
             <LiteYouTubeEmbed
                 id="Ffe-7T6yDhU"
                 adNetwork={false}
-                title="Piano play?"
+                title="Un Sospiro video"
                 poster="maxresdefault"
                 wrapperClass="yt-lite"
             />
