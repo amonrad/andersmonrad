@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.youtube-lite-wrapper {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  position: relative;
+}
