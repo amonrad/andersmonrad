@@ -1,4 +1,6 @@
 import LinkItem from "../../../LinkItem";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 export default function VirtuosoApp() {
     return (
@@ -22,8 +24,22 @@ export default function VirtuosoApp() {
                         ></iframe>
                     </div>
                 </div> */}
+
+                <div className="w-full">
+                    {/* Floated Video Container */}
+                    <div className="float-left w-full sm:w-2/3 aspect-video mr-4 mb-2 relative">
+                        <LiteYouTubeEmbed
+                            id="1TX8Myc1FsY"
+                            title="VirtuosoApp Video"
+                            noCookie={true}
+                            adNetwork={false}
+                            poster="maxresdefault"
+                            wrapperClass="yt-lite"
+                        />
+                    </div>
             
-                <p>
+                <p className="mb-4">
+            
                 “Virtuoso” was my first music app for iPhone. Unfortunately, it is awaiting update, and thus not available on appstore at the moment. It will soon be made available again. <br/>
                 The Interface is based on a combination of multitouch- and accelerometer-input, which suggests a gestural, bodily control of the app: by moving the Iphone around in all directions, whilst holding down one or multiple fingers to the screen, the user can control and manipulate five different synthesizers. These 5 synthesizers generates abstract electronic sounds by 5 different synthesis techniques: additive-, physical modeling-, FM-, subtractive-, and granular-synthesis. <br/>
                 While playing with the app, thereby activating up to 5 different sounds one by one, the user at the same time generates a 15-second musical composition and a simple piece of graphic design on the screen from a built-in algorithmic composition setup. When the user releases the fingers from the screen, this composition will play with the selected sounds and graphics. <br/>
@@ -35,6 +51,7 @@ export default function VirtuosoApp() {
                 “Virtuoso” was curated by the artists group <LinkItem url="https://www.facebook.com/Haandholdt/" text="Haandholdt" />
                 </p>  
             </div>
+        </div>
         </div>
     );
 }

@@ -1,29 +1,36 @@
 import LinkItem from "../../../LinkItem";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 export default function SoundingImages() {
     return (
-        <div className="pt-8 p-2 bg-white bg-opacity-35 w-full flex flex-col items-start">
+        <div className="pt-8 p-2 bg-white bg-opacity-35 w-full flex flex-col items-start text-gray-800 text-left">
+            <h2 className="text-2xl font-bold pb-8 text-center w-full">Sounding Images & Percussion</h2>
             
-            <div className="text-gray-800 text-left" style={{ position: "relative" }}>
-                   
-                <h2 className="text-2xl font-bold pb-8 text-center">Sounding Images & Percussion</h2>
-                
-                
-                {/* <div className="w-2/3 float-left mr-4 mb-2">
-                    <div className="relative w-full aspect-video">
-                        <iframe className="absolute inset-0 w-full h-full" 
-                            src="https://www.youtube.com/embed/Ehx0cWi_bbY?si=x9CmG4wnzqygTSOH" 
-                            title="SoundingImages Video" 
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-                </div> */}
+            <div className="w-full">
+                {/* Floated Video Container */}
+                <div className="float-left w-full sm:w-2/3 aspect-video mr-4 mb-2 relative">
+                    <LiteYouTubeEmbed
+                        id="Ehx0cWi_bbY"
+                        title="SoundingImages video"
+                        noCookie={true}
+                        adNetwork={false}
+                        poster="maxresdefault"
+                        wrapperClass="yt-lite"
+                    />
+                </div>
+
+                {/* Wrapping Text */}
+                <p className="mb-4">
+                    Performance from <LinkItem url="https://genbib.dk/tranen" text="Tranen, Gentofte Hovedbibliotek" />, March 31, 2019.
+                    I am performing on an iPad, showcasing my iOS app Sounding Images #7-12 in an improvisatory interplay with Ying-Hsueh Chen on her acoustic percussion instruments.
+                    We perform regularly with this setup at various venues. Our approach blends tactile technology with organic percussion, inviting listeners into a hybrid acoustic-electronic sound world where touch, resonance, and gesture intertwine in real-time performance.
+                </p>
 
                 <p>
-                    Performance from <LinkItem url="https://genbib.dk/tranen" text="Tranen, Gentofte Hovedbibliotek" />, March 31, 2019. I am performing on an iPad, showcasing my iOS app Sounding Images #7-12 in an improvisatory interplay with Ying-Hsueh Chen on her acoustic percussion instruments. We perform regularly with this setup at various venues.
+                    In addition to public concerts, we’ve explored educational and experimental settings, adapting the performance to both young audiences and contemporary music venues. The Sounding Images app acts as a graphical score and instrument, allowing spontaneous composition and interaction. Our goal is to challenge and inspire listeners through texture, rhythm, and playful immediacy.
                 </p>
             </div>
- 
         </div>
     );
 }

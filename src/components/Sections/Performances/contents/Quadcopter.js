@@ -1,4 +1,6 @@
 import LinkItem from "../../../LinkItem";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 export default function Quadcopter() {
     return (
@@ -19,7 +21,20 @@ export default function Quadcopter() {
                     </div>
                 </div> */}
 
-                <p>
+                <div className="w-full">
+                    {/* Floated Video Container */}
+                    <div className="float-left w-full sm:w-2/3 aspect-video mr-4 mb-2 relative">
+                        <LiteYouTubeEmbed
+                            id="g9_yaSGtlQI"
+                            title="Quadcopter Video"
+                            noCookie={true}
+                            adNetwork={false}
+                            poster="maxresdefault"
+                            wrapperClass="yt-lite"
+                        />
+                    </div>
+            
+                <p className="mb-4">
                     Performance from <LinkItem url="https://tedxcopenhagen.dk/events/mobility/" text="TEDxCopenhagen" /> event, 
                     September 17, 2014 with Tim Garbos and Patrick Jarnfelt from <LinkItem url="https://www.copenhagengamecollective.org" text="Copenhagen Game Collective" />. 
                     Patrick later wrote this <LinkItem url="https://www.copenhagengamecollective.org/2015/11/27/playing-drones-as-instruments/" text="blogpost" /> about the project. 
@@ -28,6 +43,7 @@ export default function Quadcopter() {
                     The piece was first performed at <LinkItem url="https://kuto.dk/click/" text="Click Festival" /> in May 2014.
                 </p>
             </div>
+        </div>
         </div>
     );
 }
