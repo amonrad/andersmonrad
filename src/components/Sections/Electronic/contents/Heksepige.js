@@ -1,4 +1,5 @@
 import LinkItem from "../../../LinkItem";
+import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
 export default function Heksepige() {
     return (
@@ -23,6 +24,15 @@ export default function Heksepige() {
                     A quirky piece from 2005, composed for the “yelling choir” <LinkItem url="http://whop.dk" text="WHOP" /> and an electronic part derived entirely from recordings of human voice recitations of poems from the obscure collection “Heksepige” by Danish author Mette Ulfsen. The whole piece is in three movements and was performed a variety of places during 2005, including <LinkItem url="https://norbergfestival.com" text="Norberg Festival" /> in Sweden:
                     
                 </p>
+
+            </div>
+                            
+            <div className="w-full">
+                            
+                <AudioBarLiteEmbed id="q8imDU78z2s" title="HeksepigeA Audio" />
+                <AudioBarLiteEmbed id="nd7cNFMjbX0" title="HeksepigeB Audio" />
+                <AudioBarLiteEmbed id="73o9Msf7tco" title="HeksepigeC Audio" />
+                            
 
                 
                 {/* <iframe 

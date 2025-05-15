@@ -1,4 +1,5 @@
 import LinkItem from "../../../LinkItem";
+import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
 export default function EggRunGame() {
     return (
@@ -15,6 +16,13 @@ export default function EggRunGame() {
                 <p>
                 Brief theme song for another prototype game project, which never went beyond the planning stage. <LinkItem url="https://napnokgames.com" text="KnapNok Games" /> came up with the idea for “Egg run”, in which the player was supposed to balance an imaginary egg while running with a tablet. This theme song, played by myself on a “honky tonk”-piano, is heavily influenced by the music of ragtime composer Scott Joplin.            
                 </p>
+
+            </div>
+                                
+            <div className="w-full">
+                                
+                <AudioBarLiteEmbed id="41GvTt5YUO8" title="EggRun Audio" />
+                      
 
                 
                 {/* <iframe 

@@ -1,4 +1,6 @@
 import LinkItem from "../../../LinkItem";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 export default function LegoConcert() {
     return (
@@ -19,9 +21,23 @@ export default function LegoConcert() {
                     </div>
                 </div> */}
 
-                <p>
+                 <div className="w-full">
+                    {/* Floated Video Container */}
+                    <div className="float-left w-full sm:w-2/3 aspect-video mr-4 mb-2 relative">
+                        <LiteYouTubeEmbed
+                            id="kZIy3170pgI"
+                            title="LegoConcert Video"
+                            noCookie={true}
+                            adNetwork={false}
+                            poster="maxresdefault"
+                            wrapperClass="yt-lite"
+                        />
+                    </div>
+            
+                <p className="mb-4">
                 Video-snippet from a concert I did with <LinkItem url="http://totem.menneske.dk" text="Jonas Olesen" /> at the <LinkItem url="https://norbergfestival.com" text="Norberg Festival" /> in Sweden, July 2006. Our concert-act was called IAPMI, and consisted of a Lego-landscape with in-build “instruments”, connected to the loudspeakers through contact microphones. Thus all the sounds are actual sounds by Lego bricks.
                 </p>
+            </div>
             </div>
  
         </div>

@@ -1,4 +1,6 @@
 import LinkItem from "../../../LinkItem";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 export default function Esophon() {
     return (
@@ -15,25 +17,30 @@ export default function Esophon() {
                 {/* Floating Image */}
                 <img 
                     src={`${process.env.PUBLIC_URL}/images/Installations/EsophonPic1.jpeg`} 
-                    className="w-1/3 h-auto float-left mr-4 mb-2" 
+                    className="w-1/4 h-auto float-right mr-4 mb-2" 
                     alt="EsophonPic1" 
                 />
                 
-                {/* <div className="w-1/3 float-left mr-4 mb-2">
-                    <div className="relative w-full aspect-video">
-                        <iframe className="absolute inset-0 w-full h-full" 
-                            src="https://www.youtube.com/embed/2M-qbI9FaVM?si=UqH9vJfseVqeuQ3f" 
-                            title="EsophonVideo" 
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-                </div> */}
-
-
-                <p>
+                <p className="mb-4">
                 The Esophon is an interactive sound installation. By operating the three touch-sensitive consoles, audience members collaborate to compose a piece of music. The Esophon was developed in collaboration with my long time collaborator and friend <LinkItem url="https://www.jim1000sprog.dk/works/esophon" text="Simon Bækdahl Nielsen" />, who developed the physical installation. I developed the software, music-generating part. The Esophon was developed for the permanent exhibition at <LinkItem url="https://en.natmus.dk/museums-and-palaces/the-danish-music-museum/" text="The Danish Music Museum" />, where it is currently exhibited.            
                 </p>
+                
+                <div className="w-full">
+                {/* Floated Video Container */}
+                    <div className="float-left w-2/3 aspect-video mr-4 mb-2 relative">
+                    <LiteYouTubeEmbed
+                        id="2M-qbI9FaVM"
+                        title="EsophonVideo"
+                        noCookie={true}
+                        adNetwork={false}
+                        poster="maxresdefault"
+                        wrapperClass="yt-lite"
+                    />
+                    </div>
+            
+                
             </div>
+        </div>
         </div>
     );
 }
