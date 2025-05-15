@@ -1,4 +1,5 @@
 import LinkItem from "../../../LinkItem";
+import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
 export default function MaerskOpera() {
     return (
@@ -23,10 +24,19 @@ export default function MaerskOpera() {
 
                 <p>
                     An opera in 3 acts, for 26 voices, choir & orchestra. Produced in collaboration with artists group  <LinkItem url="https://superflex.net" text="SUPERFLEX" /> , who wrote the libretto in collaboration with Nikolai Heltoft. First composed in 2012, where the score was exhibited as a conceptual art piece in <LinkItem url="https://nikolajkunsthal.kk.dk" text="Nikolai Kunsthal" /> 
-                    . Later re-arranged and recorded in 2016, and included in the film <LinkItem url="https://superflex.net/works/the_maersk_opera" text="The Mærsk Opera" /> by SUPERFLEX, premiered at <LinkItem url="https://cphdox.dk/da/" text="CPH DOX" /> 2017.<br/> A recording of the Opera is released on the Danish label <LinkItem url="https://www.dacapo-records.dk/da/udgivelser/monrad-maersk-operaen-lp" text="DACAPO"/>.            
+                    . Later re-arranged and recorded in 2016, and included in the film <LinkItem url="https://superflex.net/works/the_maersk_opera" text="The Mærsk Opera" /> by SUPERFLEX, premiered at <LinkItem url="https://cphdox.dk/da/" text="CPH DOX" /> 2017.<br/> A recording of the Opera is released on the Danish label <LinkItem url="https://www.dacapo-records.dk/da/udgivelser/monrad-maersk-operaen-lp" text="DACAPO"/>. Listen to the whole opera here:            
                 </p>
 
-                
+                </div>
+
+                <div className="w-full">
+
+                <AudioBarLiteEmbed id="iNvFo66XMSE" title="MærskA Video" />
+                <AudioBarLiteEmbed id="AD7ZouzSzpM" title="MærskB Video" />
+                <AudioBarLiteEmbed id="T69PNZAC-WY" title="MærskC Video" />
+                <AudioBarLiteEmbed id="0n0UEhwsmc8" title="MærskD Video" />
+                <AudioBarLiteEmbed id="tAE4NkpMLVE" title="MærskE Video" />
+
                 {/* <iframe 
                     className="w-full h-14 mt-5"  // Full width with minimal height
                     src="https://www.youtube.com/embed/iNvFo66XMSE?si=8XcmFbalH95CRMbm&controls=1&showinfo=0&autoplay=0&mute=0"

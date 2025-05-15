@@ -1,4 +1,5 @@
 import LinkItem from "../../../LinkItem";
+import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
 export default function Prepositions() {
     return (
@@ -30,8 +31,14 @@ export default function Prepositions() {
                     
                     In addition to further performances of the work, a studio recording was recorded in 2016. Listen to recordings of a few of the songs:
                 </p>
+                </div>
 
-                
+                <div className="w-full">
+
+                    <AudioBarLiteEmbed id="57yMZ3GMZD8" title="PrepositionsA Video" />
+
+                    <AudioBarLiteEmbed id="4GJccpuV6nY" title="PrepositionsB Video" />
+
                 {/* <iframe 
                     className="w-full h-14 mt-2"
                     src="https://www.youtube.com/embed/57yMZ3GMZD8?si=HjEbYqaYW5S6eBNV&controls=1&showinfo=0&autoplay=0&mute=0"
