@@ -1,4 +1,5 @@
 import LinkItem from "../../../LinkItem";
+import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
 export default function Paaskesondag() {
     return (
@@ -15,6 +16,12 @@ export default function Paaskesondag() {
                 <p>
                 Short piano tune, composed for the short film “Påskesøndag” (Easter sunday) by the Danish film director <LinkItem url="https://www.dfi.dk/viden-om-film/filmdatabasen/person/jonas-grum" text="Jonas Grum" />. 
                 </p>
+            </div>
+                                            
+            <div className="w-full">
+                                            
+                <AudioBarLiteEmbed id="vwiWZ0HyfEI" title="paaskesondagAudio" />
+                                       
 
 {/*                 
                 <iframe 

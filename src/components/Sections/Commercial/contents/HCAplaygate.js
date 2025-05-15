@@ -1,4 +1,5 @@
 import LinkItem from "../../../LinkItem";
+import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
 export default function HCAplaygate() {
     return (
@@ -24,6 +25,13 @@ export default function HCAplaygate() {
                 <p>
                 These are theme-songs I composed for the commercial kids’ game <LinkItem url="https://apps.apple.com/dk/app/h-c-andersen-eventyrl%C3%B8b/id771674113?l=da" text="HCA playgate" /> in 2013, produced in collaboration with <LinkItem url="https://napnokgames.com" text="KnapNok Games" />. The game is available on appstore, released by the Danish playground company <LinkItem url="https://www.kompan.com/da/dk" text="Kompan" />, to promote a new playground concept based on the fairytales of H.C. Andersen. Thus, these are theme songs for “The Tinderbox”, “The Little Mermaid” and “The Ugly Duckling” – with musical inspiration ranging from the Danish composer H.C. Lumbye, “Aqaurium” by Saint-Säens to “Peter & the Wolf” by Prokofiev. Midway through, each of the pieces are repeated with expanded orchestration – intended for the “frenzy”-mode parts of the game…    
                 </p>
+            </div>
+                                            
+             <div className="w-full">
+                                            
+                <AudioBarLiteEmbed id="uWLskss8Uwo" title="HCAAAudio" />
+                <AudioBarLiteEmbed id="6e0SQBEj_I4" title="HCABAudio" />
+                <AudioBarLiteEmbed id="AZkhHf6vMAg" title="HCACAudio" />
 
 {/*                 
                 <iframe 
