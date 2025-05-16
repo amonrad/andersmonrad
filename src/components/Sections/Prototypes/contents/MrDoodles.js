@@ -34,7 +34,7 @@ export default function PaperEvolutionGame() {
                             title="PaperEvolutionVideo"
                             noCookie={true}
                             adNetwork={false}
-                            poster="maxresdefault"
+                            customThumbnail={`${process.env.PUBLIC_URL}/files/PaperEvolutionThumbnail.jpg`}
                             wrapperClass="yt-lite"
                         />
                     </div>
@@ -56,8 +56,6 @@ export default function PaperEvolutionGame() {
 
             </div>
 
-                
-                
                 {/* <iframe 
                     className="w-full h-14 mt-5"  // Full width with minimal height
                     src="https://www.youtube.com/embed/GleJuDSUd-4?si=LGpGeK7lgQcBj4xM&controls=1&showinfo=0&autoplay=0&mute=0"
@@ -77,7 +75,6 @@ export default function PaperEvolutionGame() {
                     allow="encrypted media"
                 ></iframe> */}
                 
-            
         </div>
     );
 }

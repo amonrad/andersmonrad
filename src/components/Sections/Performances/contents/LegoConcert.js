@@ -29,7 +29,7 @@ export default function LegoConcert() {
                             title="LegoConcert Video"
                             noCookie={true}
                             adNetwork={false}
-                            poster="maxresdefault"
+                            customThumbnail={`${process.env.PUBLIC_URL}/files/LegoThumbnail.jpg`}
                             wrapperClass="yt-lite"
                         />
                     </div>
