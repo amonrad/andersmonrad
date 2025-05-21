@@ -13,6 +13,7 @@ import IOSapps from "./components/Sections/IOSapps/IOSapps";
 import Prototypes from "./components/Sections/Prototypes/Prototypes";
 import Releases from "./components/Sections/Releases/Releases";
 import Texts from "./components/Sections/Texts/Texts";
+import ContactForm from "./components/ContactForm";
 
 import accordionStyles from "./styles/styles";
 
@@ -91,11 +92,11 @@ function App() {
                     onToggle={setOpenSection}
                 />
 
-                <Accordion 
+                <Accordion
                     title="piano"
                     displayName="PIANO"
-                    imageSrc={`${process.env.PUBLIC_URL}/images/piano.jpeg`} 
-                    content={<Piano />} 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/piano.jpeg`}
+                    content={<Piano isOpen={openSection === "piano"} />}  // Pass isOpen here
                     styles={accordionStyles.piano}
                     isOpen={openSection === "piano"}
                     onToggle={setOpenSection}
@@ -115,7 +116,7 @@ function App() {
                     title="performances" 
                     displayName="PERFORMANCES"
                     imageSrc={`${process.env.PUBLIC_URL}/images/performances.jpeg`} 
-                    content={<Performances />} 
+                    content={<Performances isOpen={openSection === "performances"}/>} 
                     styles={accordionStyles.performances}
                     isOpen={openSection === "performances"}
                     onToggle={setOpenSection}
@@ -169,6 +170,16 @@ function App() {
                     styles={accordionStyles.about}
                     isOpen={openSection === "about"}
                     onToggle={setOpenSection}
+                />
+
+                <Accordion 
+                    title="contact"
+                    displayName="CONTACT"
+                    imageSrc={`${process.env.PUBLIC_URL}/images/score_music.jpeg`} 
+                    content={<ContactForm />} 
+                    styles={accordionStyles.contactform}
+                    isOpen={openSection === "contact"} // Controls if the accordion is open
+                    onToggle={setOpenSection} // Allows the accordion to update `openSection`
                 />
                 
                 <div className="w-full h-screen opacity-0 pointer-events-none">

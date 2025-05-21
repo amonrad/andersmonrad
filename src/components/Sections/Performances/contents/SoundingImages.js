@@ -2,13 +2,14 @@ import LinkItem from "../../../LinkItem";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
-export default function SoundingImages() {
+export default function SoundingImages({ isOpen }) {
     return (
         <div className="pt-8 p-2 bg-white bg-opacity-35 w-full flex flex-col items-start text-gray-800 text-left">
             <h2 className="text-2xl font-bold pb-8 text-center w-full">Sounding Images & Percussion</h2>
             
             <div className="w-full">
-                {/* Floated Video Container */}
+                
+                {isOpen ? ( 
                 <div className="float-left w-full sm:w-2/3 aspect-video mr-4 mb-2 relative">
                     <LiteYouTubeEmbed
                         id="Ehx0cWi_bbY"
@@ -19,6 +20,7 @@ export default function SoundingImages() {
                         wrapperClass="yt-lite"
                     />
                 </div>
+                ) : null}
 
                 {/* Wrapping Text */}
                 <p className="mb-4">

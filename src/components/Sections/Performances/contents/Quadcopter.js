@@ -2,7 +2,7 @@ import LinkItem from "../../../LinkItem";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
-export default function Quadcopter() {
+export default function Quadcopter({ isOpen }) {
     return (
         <div className="pt-8 p-2 bg-white bg-opacity-35 w-full flex flex-col items-start">
             
@@ -22,7 +22,8 @@ export default function Quadcopter() {
                 </div> */}
 
                 <div className="w-full">
-                    {/* Floated Video Container */}
+                    
+                    {isOpen ? ( 
                     <div className="float-left w-full sm:w-2/3 aspect-video mr-4 mb-2 relative">
                         <LiteYouTubeEmbed
                             id="g9_yaSGtlQI"
@@ -33,6 +34,7 @@ export default function Quadcopter() {
                             wrapperClass="yt-lite"
                         />
                     </div>
+                    ) : null}
             
                 <p className="mb-4">
                     Performance from <LinkItem url="https://tedxcopenhagen.dk/events/mobility/" text="TEDxCopenhagen" /> event, 

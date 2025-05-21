@@ -4,14 +4,15 @@ import GreenRusty from "./contents/GreenRusty";
 import MonradElving from "./contents/MonradElving";
 import LegoConcert from "./contents/LegoConcert";
 
-export default function Performances() {
+
+export default function Performances({ isOpen }) {
     return (
         <div className="text-black text-center space-y-4">
-            <SoundingImages/>
-            <Quadcopter/>
-            <GreenRusty/>
-            <MonradElving/>
-            <LegoConcert/>
+            <SoundingImages isOpen={isOpen}/>
+            <Quadcopter isOpen={isOpen}/>
+            <GreenRusty isOpen={isOpen}/>
+            <MonradElving isOpen={isOpen}/>
+            <LegoConcert isOpen={isOpen}/>
         </div>
     );
 }
