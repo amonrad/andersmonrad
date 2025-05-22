@@ -175,7 +175,7 @@ function App() {
                 <Accordion 
                     title="contact"
                     displayName="CONTACT"
-                    imageSrc={`${process.env.PUBLIC_URL}/images/score_music.jpeg`} 
+                    imageSrc={`${process.env.PUBLIC_URL}/images/contact.jpeg`} 
                     content={<ContactForm />} 
                     styles={accordionStyles.contactform}
                     isOpen={openSection === "contact"} // Controls if the accordion is open
