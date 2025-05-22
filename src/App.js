@@ -56,7 +56,7 @@ function App() {
                     title="scoremusic"
                     displayName="SCORE MUSIC"
                     imageSrc={`${process.env.PUBLIC_URL}/images/score_music.jpeg`} 
-                    content={<ScoreMusic />} 
+                    content={<ScoreMusic isOpen={openSection === "scoremusic"}/>} 
                     styles={accordionStyles.scoremusic}
                     isOpen={openSection === "scoremusic"} // Controls if the accordion is open
                     onToggle={setOpenSection} // Allows the accordion to update `openSection`
@@ -66,7 +66,7 @@ function App() {
                     title="iosapps"
                     displayName="IOS APPS"
                     imageSrc={`${process.env.PUBLIC_URL}/images/ios_apps.jpeg`} 
-                    content={<IOSapps />} 
+                    content={<IOSapps isOpen={openSection === "iosapps"}/>} 
                     styles={accordionStyles.iosapps}
                     isOpen={openSection === "iosapps"}
                     onToggle={setOpenSection}
@@ -76,7 +76,7 @@ function App() {
                     title="installations"
                     displayName="INSTALLATIONS"
                     imageSrc={`${process.env.PUBLIC_URL}/images/installations.jpeg`} 
-                    content={<Installations />} 
+                    content={<Installations isOpen={openSection === "installations"}/>} 
                     styles={accordionStyles.installations}
                     isOpen={openSection === "installations"}
                     onToggle={setOpenSection}
@@ -106,7 +106,7 @@ function App() {
                     title="electronicmusic"
                     displayName="ELECTRONIC MUSIC"
                     imageSrc={`${process.env.PUBLIC_URL}/images/electronic.jpeg`}
-                    content={<Electronic />} 
+                    content={<Electronic isOpen={openSection === "electronicmusic"}/>} 
                     styles={accordionStyles.electronic}
                     isOpen={openSection === "electronicmusic"}
                     onToggle={setOpenSection}
@@ -126,7 +126,7 @@ function App() {
                     title="prototypes"
                     displayName="PROTOTYPES"
                     imageSrc={`${process.env.PUBLIC_URL}/images/prototypes.jpeg`} 
-                    content={<Prototypes />} 
+                    content={<Prototypes isOpen={openSection === "prototypes"}/>} 
                     styles={accordionStyles.prototypes}
                     isOpen={openSection === "prototypes"}
                     onToggle={setOpenSection}
@@ -136,7 +136,7 @@ function App() {
                     title="commercial"
                     displayName="COMMERCIAL"
                     imageSrc={`${process.env.PUBLIC_URL}/images/commercial.jpeg`} 
-                    content={<Commercial />} 
+                    content={<Commercial isOpen={openSection === "commercial"}/>} 
                     styles={accordionStyles.commercial}
                     isOpen={openSection === "commercial"}
                     onToggle={setOpenSection}

@@ -1,11 +1,10 @@
 import LinkItem from "../../../LinkItem";
 import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
-export default function GreenRustyB() {
+export default function GreenRustyB({ isOpen }) {
     return (
         <div className="p-2 pt-8 pb-4 bg-white bg-opacity-35 w-full flex flex-col items-start">
             
-            {/* Text Section */}
             <div className="text-gray-800 text-left" style={{ gridColumn: "2", gridRow: "1" }}>
                 <h2 className="text-2xl font-bold pb-8 text-center">....Green Rusty Metal On A Sunken Ship (2006) - <LinkItem url="/files/GreenRustyMetal.pdf" text="(Score)" /></h2>
                 <p>
@@ -13,18 +12,10 @@ export default function GreenRustyB() {
                 </p>
             </div>
                 
-            <div className="w-full">
-                
-                <AudioBarLiteEmbed id="jaPt1PmGJWA" title="GreenRusty Audio" />
-                
-            
-                {/* <iframe 
-                    className="w-full h-14 mt-5"  // Full width with minimal height
-                    src="https://www.youtube.com/embed/jaPt1PmGJWA?si=cqeZ5nFFhXOTREWN?si=zc1NFGXTN5STpVDe&controls=1&showinfo=0&autoplay=0&mute=0"
-                    title="GreenRusty Audio"
-                    allow="encrypted media"
-                ></iframe> */}
-
+            <div className="w-full"> 
+                {isOpen ? (   
+                    <AudioBarLiteEmbed id="jaPt1PmGJWA" title="GreenRusty Audio" />
+                ) : null}
             </div>
         </div>
     );

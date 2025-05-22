@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 export default function Artwork() {
 
-    // Use separate useState hooks for each shuffled image array
     const [shuffledImages, setShuffledImages] = useState([]);
     const [shuffledImagesB, setShuffledImagesB] = useState([]);
 

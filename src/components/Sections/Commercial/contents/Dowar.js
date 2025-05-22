@@ -1,19 +1,14 @@
 import LinkItem from "../../../LinkItem";
 import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
-export default function Dowar() {
+export default function Dowar({ isOpen }) {
     return (
         <div className="p-2 pt-8 bg-white bg-opacity-35 w-full flex flex-col items-start">
-            
-            {/* Text Section with Wrapped Image */}
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
-
-                {/* Wrapped Text */}
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     Days of Wine & Roses (DOWAR)
                 </h2>
                  
-                {/* Floating Image */}
                 <img 
                     src={`${process.env.PUBLIC_URL}/images/Commercial/DOWAR.jpeg`} 
                     className="w-1/2 h-auto float-left mr-4 mb-2" 
@@ -26,17 +21,9 @@ export default function Dowar() {
             </div>
                                 
             <div className="w-full">
-                                
-                <AudioBarLiteEmbed id="g3AzGnJY-y8" title="DowarAudio" />
-                                
-
-                {/* <iframe 
-                    className="w-full h-14 mt-5"  // Full width with minimal height
-                    src="https://www.youtube.com/embed/g3AzGnJY-y8?si=liUqvq9OLvd49uFj&controls=1&showinfo=0&autoplay=0&mute=0"
-                    title="DowarAudio"
-                    allow="encrypted media"
-                ></iframe>  */}
-                
+                {isOpen ? (   
+                    <AudioBarLiteEmbed id="g3AzGnJY-y8" title="DowarAudio" />
+                ) : null}                
             </div>
         </div>
     );

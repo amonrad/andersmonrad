@@ -10,19 +10,18 @@ export default function SoundingImages({ isOpen }) {
             <div className="w-full">
                 
                 {isOpen ? ( 
-                <div className="float-left w-full sm:w-2/3 aspect-video mr-4 mb-2 relative">
-                    <LiteYouTubeEmbed
-                        id="Ehx0cWi_bbY"
-                        title="SoundingImages video"
-                        noCookie={true}
-                        adNetwork={false}
-                        poster="maxresdefault"
-                        wrapperClass="yt-lite"
-                    />
-                </div>
+                    <div className="float-left w-full sm:w-2/3 aspect-video mr-4 mb-2 relative">
+                        <LiteYouTubeEmbed
+                            id="Ehx0cWi_bbY"
+                            title="SoundingImages video"
+                            noCookie={true}
+                            adNetwork={false}
+                            poster="maxresdefault"
+                            wrapperClass="yt-lite"
+                        />
+                    </div>
                 ) : null}
 
-                {/* Wrapping Text */}
                 <p className="mb-4">
                     Performance from <LinkItem url="https://genbib.dk/tranen" text="Tranen, Gentofte Hovedbibliotek" />, March 31, 2019.
                     I am performing on an iPad, showcasing my iOS app Sounding Images #7-12 in an improvisatory interplay with Ying-Hsueh Chen on her acoustic percussion instruments.

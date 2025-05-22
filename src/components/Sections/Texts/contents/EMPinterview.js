@@ -3,16 +3,12 @@ import LinkItem from "../../../LinkItem";
 export default function EMPinterview() {
     return (
         <div className="p-2 pt-8 bg-white bg-opacity-35 w-full flex flex-col items-start">
-            
-            {/* Text Section with Wrapped Image */}
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
 
-                {/* Wrapped Text */}
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     Interview with Else Marie Pade (2005)
                 </h2>
                 
-                {/* Floating Image */}
                 <img 
                     src={`${process.env.PUBLIC_URL}/images/Texts/EMPsLejlighed.jpeg`} 
                     className="w-1/2 h-auto float-left mr-4 mb-2" 

@@ -8,7 +8,6 @@ export default function Piano({ isOpen }) {
                 Piano-playing is my main artistic background, and has been a central part of my artistic identity since I started playing when I was 6 years old. I played on a high level as a teenager, and participated in a few competitions. In my 20’s I abandoned the piano for a while. In later years, since I started teaching piano, I have taken up my piano playing again, and enjoy playing a wide variety of musical styles - especially the transcendental piano works of the romantic era and beyond. Here’s a little selection.
             </p>
             
-            {/* Conditionally render the YouTube videos only if accordion is open */}
             {isOpen && (
                 <>
                     {/* Video 1 */}
@@ -50,7 +49,6 @@ export default function Piano({ isOpen }) {
                         title="Liebesfreud Video"
                         noCookie={true}
                         adNetwork={false}
-                        //customThumbnail={`${process.env.PUBLIC_URL}/files/Thumbnails/LegoThumbnail.jpg`}
                         poster="maxresdefault"
                         wrapperClass="yt-lite"
                     />
@@ -68,7 +66,6 @@ export default function Piano({ isOpen }) {
                         title="Smetana Video"
                         noCookie={true}
                         adNetwork={false}
-                        //customThumbnail={`${process.env.PUBLIC_URL}/files/Thumbnails/LegoThumbnail.jpg`}
                         poster="maxresdefault"
                         wrapperClass="yt-lite"
                     />
@@ -87,7 +84,6 @@ export default function Piano({ isOpen }) {
                         title="Bartok Video"
                         noCookie={true}
                         adNetwork={false}
-                        //customThumbnail={`${process.env.PUBLIC_URL}/files/Thumbnails/LegoThumbnail.jpg`}
                         poster="maxresdefault"
                         wrapperClass="yt-lite"
                     />

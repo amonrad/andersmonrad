@@ -1,87 +1,115 @@
 const accordionStyles = {
-  scoremusic: { // 1
-    closed: "bg-[rgb(45,165,165)] hover:bg-[rgb(65,160,150)]",
-    open: "bg-[rgb(65,160,150)]",
+  scoremusic: {
+    closed: "bg-rose-500",
+    hover: "hover:bg-rose-400",
+    open: "bg-rose-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-rose-400 text-black"
   },
-  iosapps: { // 2
-    closed: "bg-[rgb(180,80,190)] hover:bg-[rgb(165,95,180)]",
-    open: "bg-[rgb(165,95,180)]",
+  iosapps: {
+    closed: "bg-sky-500",
+    hover: "hover:bg-sky-400",
+    open: "bg-sky-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-sky-400 text-black"
   },
-  artinstallations: { // 3
-    closed: "bg-[rgb(70,150,140)] hover:bg-[rgb(90,145,130)]",
-    open: "bg-[rgb(90,145,130)]",
+  artinstallations: {
+    closed: "bg-indigo-500",
+    hover: "hover:bg-indigo-400",
+    open: "bg-indigo-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-indigo-400 text-black"
   },
-  artwork: { // 4
-    closed: "bg-[rgb(150,80,165)] hover:bg-[rgb(135,95,155)]",
-    open: "bg-[rgb(135,95,155)]",
+  artwork: {
+    closed: "bg-orange-500",
+    hover: "hover:bg-orange-400",
+    open: "bg-orange-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-orange-400 text-black"
   },
-  piano: { // 5
-    closed: "bg-[rgb(105,135,125)] hover:bg-[rgb(120,130,115)]",
-    open: "bg-[rgb(120,130,115)]",
+  piano: {
+    closed: "bg-emerald-500",
+    hover: "hover:bg-emerald-400",
+    open: "bg-emerald-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-emerald-400 text-black"
   },
-  electronic: { // 6
-    closed: "bg-[rgb(120,120,130)] hover:bg-[rgb(110,135,115)]",
-    open: "bg-[rgb(110,135,115)]",
+  electronic: {
+    closed: "bg-cyan-500",
+    hover: "hover:bg-cyan-400",
+    open: "bg-cyan-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-cyan-400 text-black"
   },
-  installations: { // 7
-    closed: "bg-[rgb(160,125,100)] hover:bg-[rgb(175,120,90)]",
-    open: "bg-[rgb(175,120,90)]",
+  installations: {
+    closed: "bg-lime-500",
+    hover: "hover:bg-lime-400",
+    open: "bg-lime-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-lime-400 text-black"
   },
-  performances: { // 8
-    closed: "bg-[rgb(110,150,90)] hover:bg-[rgb(95,165,80)]",
-    open: "bg-[rgb(95,165,80)]",
+  performances: {
+    closed: "bg-amber-500",
+    hover: "hover:bg-amber-400",
+    open: "bg-amber-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-amber-400 text-black"
   },
-  prototypes: { // 9
-    closed: "bg-[rgb(180,110,80)] hover:bg-[rgb(190,105,75)]",
-    open: "bg-[rgb(190,105,75)]",
+  prototypes: {
+    closed: "bg-teal-500",
+    hover: "hover:bg-teal-400",
+    open: "bg-teal-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-teal-400 text-black"
   },
-  commercial: { // 10
-    closed: "bg-[rgb(85,175,70)] hover:bg-[rgb(85,175,70)]",
-    open: "bg-[rgb(85,175,70)]",
+  commercial: {
+    closed: "bg-fuchsia-500",
+    hover: "hover:bg-fuchsia-400",
+    open: "bg-fuchsia-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-fuchsia-400 text-black"
   },
-  releases: { // 11
-    closed: "bg-[rgb(195,105,65)] hover:bg-[rgb(195,105,65)]",
-    open: "bg-[rgb(195,105,65)]",
+  releases: {
+    closed: "bg-red-500",
+    hover: "hover:bg-red-400",
+    open: "bg-red-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-red-400 text-black"
   },
-  texts: { // 12
-    closed: "bg-[rgb(100,160,75)] hover:bg-[rgb(90,170,70)]",
-    open: "bg-[rgb(90,170,70)]",
+  texts: {
+    closed: "bg-yellow-500",
+    hover: "hover:bg-yellow-400",
+    open: "bg-yellow-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-yellow-400 text-black"
   },
-  about: { // 13
-    closed: "bg-[rgb(210,100,60)] hover:bg-[rgb(210,100,60)]",
-    open: "bg-[rgb(210,100,60)]",
+  about: {
+    closed: "bg-violet-500",
+    hover: "hover:bg-violet-400",
+    open: "bg-violet-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-violet-400 text-black"
   },
-  contactform: { // 14
-    closed: "bg-[rgb(80,160,100)] hover:bg-[rgb(80,160,100)]",
-    open: "bg-[rgb(80,160,100)]",
+  contactform: {
+    closed: "bg-green-500",
+    hover: "hover:bg-green-400",
+    open: "bg-green-400",
     top: "bg-transparent",
-    content: "text-gray-400"
+    content: "text-gray-700",
+    sidebar: "bg-green-400 text-black"
   }
 };
 

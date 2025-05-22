@@ -2,19 +2,16 @@ import LinkItem from "../../../LinkItem";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
-export default function Esophon() {
+export default function Esophon({ isOpen }) {
     return (
         <div className="p-2 pt-8 bg-white bg-opacity-35 w-full flex flex-col items-start">
             
-            {/* Text Section with Wrapped Image */}
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
 
-                {/* Wrapped Text */}
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     Esophon (2021)
                 </h2>
-                
-                {/* Floating Image */}
+
                 <img 
                     src={`${process.env.PUBLIC_URL}/images/Installations/EsophonPic1.jpeg`} 
                     className="w-1/4 h-auto float-right mr-4 mb-2" 
@@ -26,21 +23,20 @@ export default function Esophon() {
                 </p>
                 
                 <div className="w-full">
-                {/* Floated Video Container */}
-                    <div className="float-left w-2/3 aspect-video mr-4 mb-2 relative">
-                    <LiteYouTubeEmbed
-                        id="2M-qbI9FaVM"
-                        title="EsophonVideo"
-                        noCookie={true}
-                        adNetwork={false}
-                        poster="maxresdefault"
-                        wrapperClass="yt-lite"
-                    />
-                    </div>
-            
-                
+                    {isOpen ? (   
+                        <div className="float-left w-2/3 aspect-video mr-4 mb-2 relative">
+                            <LiteYouTubeEmbed
+                                id="2M-qbI9FaVM"
+                                title="EsophonVideo"
+                                noCookie={true}
+                                adNetwork={false}
+                                poster="maxresdefault"
+                                wrapperClass="yt-lite"
+                            />
+                        </div>
+                    ) : null}
+                </div>
             </div>
-        </div>
         </div>
     );
 }

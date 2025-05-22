@@ -118,8 +118,8 @@ export default function Accordion({ title, displayName, imageSrc, content, style
 
     {showFloatingBar && (
         <div 
-            className={`${styles.content} ${styles.open} fixed top-1/4 bg-black text-white p-2 shadow-lg 
-            transition-opacity duration-300 flex items-center justify-center transform rotate-90 w-auto`}
+            className={`fixed top-1/4 bg-black text-white p-2 shadow-lg 
+            transition-opacity duration-300 flex items-center justify-center transform rotate-90 w-auto ${styles.sidebar}`}
             style={{
                 height: `${floatingSidebarHeight}px`, // Set the height (rotated sidebar's width)
                 transformOrigin: "left bottom",  // Rotate around the center

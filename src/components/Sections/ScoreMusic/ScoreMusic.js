@@ -4,14 +4,14 @@ import DeejayM from "./contents/DeejayM";
 import SylvesterS from "./contents/SylvesterS";
 
 
-export default function ScoreMusic() {
+export default function ScoreMusic({ isOpen }) {
     return (
 
         <div className="text-black text-center space-y-4"> 
-            <MaerskOpera/>
-            <Prepositions/>        
-            <DeejayM/>
-            <SylvesterS/>      
+            <MaerskOpera isOpen={isOpen}/>
+            <Prepositions isOpen={isOpen}/>        
+            <DeejayM isOpen={isOpen}/>
+            <SylvesterS isOpen={isOpen}/>      
         </div>
     );
 }

@@ -1,21 +1,18 @@
 import LinkItem from "../../../LinkItem";
 import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
-export default function Prepositions() {
+export default function Prepositions({ isOpen }) {
     return (
         <div className="p-2 pt-8 bg-white bg-opacity-35 w-full flex flex-col items-start">
               
-            {/* Text Section with Wrapped Image */}
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
                 
-                {/* Floating Image */}
                 <img 
                     src={`${process.env.PUBLIC_URL}/images/ScoreMusic/PrepositionsBillede.jpeg`}
-                    className="w-1/5 h-auto float-left mr-4 mb-2" // ✅ Image floats right, text wraps around it
+                    className="w-1/5 h-auto float-left mr-4 mb-2"
                     alt="Prepositions" 
                 />
 
-                {/* Wrapped Text */}
                 <h2 className="text-2xl font-bold pb-8 text-left">
                     Prepositions (2015) - <LinkItem url={`${process.env.PUBLIC_URL}/files/Prepositions.pdf`} text="(Score)" />
                 </h2>
@@ -34,24 +31,12 @@ export default function Prepositions() {
                 </div>
 
                 <div className="w-full">
-
-                    <AudioBarLiteEmbed id="57yMZ3GMZD8" title="PrepositionsA Video" />
-
-                    <AudioBarLiteEmbed id="4GJccpuV6nY" title="PrepositionsB Video" />
-
-                {/* <iframe 
-                    className="w-full h-14 mt-2"
-                    src="https://www.youtube.com/embed/57yMZ3GMZD8?si=HjEbYqaYW5S6eBNV&controls=1&showinfo=0&autoplay=0&mute=0"
-                    title="PrepositionsA Audio"
-                    allow="encrypted media"
-                ></iframe>
-                <iframe 
-                    className="w-full h-14 mt-2"
-                    src="https://www.youtube.com/embed/4GJccpuV6nY?si=pxh84rxBi9-ymQD6&controls=1&showinfo=0&autoplay=0&mute=0"
-                    title="PrepositionsB Audio"
-                    allow="encrypted media"
-                ></iframe> */}
-                
+                    {isOpen ? (
+                        <>
+                        <AudioBarLiteEmbed id="57yMZ3GMZD8" title="PrepositionsA Video" />
+                        <AudioBarLiteEmbed id="4GJccpuV6nY" title="PrepositionsB Video" />
+                        </>
+                    ) : null}                
             </div>
         </div>
     );

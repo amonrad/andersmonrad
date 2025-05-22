@@ -3,16 +3,11 @@ import LinkItem from "../../../LinkItem";
 export default function EMPSamlet() {
     return (
         <div className="p-2 pt-8 bg-white bg-opacity-35 w-full flex flex-col items-start">
-            
-            {/* Text Section with Wrapped Image */}
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
-
-                {/* Wrapped Text */}
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     “Else Marie Pade - Samlede tekster” (2017)
                 </h2>
                 
-                {/* Floating Image */}
                 <img 
                     src={`${process.env.PUBLIC_URL}/images/Releases/EMP-udgivelse.jpeg`} 
                     className="w-1/3 h-auto float-left mr-4 mb-2" 

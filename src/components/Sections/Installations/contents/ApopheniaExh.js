@@ -1,19 +1,16 @@
 import LinkItem from "../../../LinkItem";
 import AudioBarLiteEmbed from '../../../AudioBarLiteEmbed';
 
-export default function ApopheniaExh() {
+export default function ApopheniaExh({ isOpen }) {
     return (
         <div className="p-2 pt-8 bg-white bg-opacity-35 w-full flex flex-col items-start">
-            
-            {/* Text Section with Wrapped Image */}
+
             <div className="text-gray-800 text-left" style={{ position: "relative" }}>
 
-                {/* Wrapped Text */}
                 <h2 className="text-2xl font-bold pb-8 text-center">
                     Apophenia Cloud Travel Apparatus (2014)
                 </h2>
-                
-                {/* Floating Image */}
+
                 <img 
                     src={`${process.env.PUBLIC_URL}/images/Installations/TaekkerExhibition.jpeg`}
                     className="w-1/2 h-auto float-left mr-4 mb-2" 
@@ -28,16 +25,9 @@ export default function ApopheniaExh() {
                 
                  <div className="w-full">
                 
+                    {isOpen ? (   
                     <AudioBarLiteEmbed id="lZ4twFSwBJA" title="ApophAudio" />
-
-            {/*                 
-                <iframe 
-                    className="w-full h-14 mt-5"  // Full width with minimal height
-                    src="https://www.youtube.com/embed/lZ4twFSwBJA?si=KTQvvkX8uhkxOnbN&controls=1&showinfo=0&autoplay=0&mute=0"
-                    title="ApophAudio"
-                    allow="encrypted media"
-                ></iframe> */}
-            
+                    ) : null}            
             </div>
         </div>
     );
